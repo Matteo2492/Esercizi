@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|c:\\users\\utente\\source\\repos\\lez04_03_task\\lez04_03_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|solutionrelative:lez04_03_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|c:\\users\\utente\\source\\repos\\lez04_03_task\\lez04_03_task\\classes\\automobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|solutionrelative:lez04_03_task\\classes\\automobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|c:\\users\\utente\\source\\repos\\lez04_03_task\\lez04_03_task\\classes\\veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|solutionrelative:lez04_03_task\\classes\\veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|c:\\users\\utente\\source\\repos\\lez04_03_task\\lez04_03_task\\classes\\moto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB273FB4-1B62-4983-9F4D-F88BE3AD5E3A}|Lez04_03_Task\\Lez04_03_Task.csproj|solutionrelative:lez04_03_task\\classes\\moto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 351,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Moto.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Moto.cs",
+              "RelativeDocumentMoniker": "Lez04_03_Task\\Classes\\Moto.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Moto.cs",
+              "RelativeToolTip": "Lez04_03_Task\\Classes\\Moto.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:21:42.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Automobile.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Automobile.cs",
+              "RelativeDocumentMoniker": "Lez04_03_Task\\Classes\\Automobile.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Automobile.cs",
+              "RelativeToolTip": "Lez04_03_Task\\Classes\\Automobile.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:21:36.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Veicolo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Veicolo.cs",
+              "RelativeDocumentMoniker": "Lez04_03_Task\\Classes\\Veicolo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Classes\\Veicolo.cs",
+              "RelativeToolTip": "Lez04_03_Task\\Classes\\Veicolo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:20:15.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Program.cs",
+              "RelativeDocumentMoniker": "Lez04_03_Task\\Program.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_03_Task\\Lez04_03_Task\\Program.cs",
+              "RelativeToolTip": "Lez04_03_Task\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:19:16.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
