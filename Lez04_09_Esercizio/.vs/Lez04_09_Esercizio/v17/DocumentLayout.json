@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|c:\\users\\utente\\source\\repos\\lez04_09_esercizio\\lez04_09_esercizio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|solutionrelative:lez04_09_esercizio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|c:\\users\\utente\\source\\repos\\lez04_09_esercizio\\lez04_09_esercizio\\classes\\oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|solutionrelative:lez04_09_esercizio\\classes\\oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|c:\\users\\utente\\source\\repos\\lez04_09_esercizio\\lez04_09_esercizio\\classes\\stanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58F89D3A-14DA-45B9-8B13-269FE32CCBEA}|Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj|solutionrelative:lez04_09_esercizio\\classes\\stanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 351,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Stanza.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Classes\\Stanza.cs",
+              "RelativeDocumentMoniker": "Lez04_09_Esercizio\\Classes\\Stanza.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Classes\\Stanza.cs",
+              "RelativeToolTip": "Lez04_09_Esercizio\\Classes\\Stanza.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T16:16:02.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Oggetto.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Classes\\Oggetto.cs",
+              "RelativeDocumentMoniker": "Lez04_09_Esercizio\\Classes\\Oggetto.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Classes\\Oggetto.cs",
+              "RelativeToolTip": "Lez04_09_Esercizio\\Classes\\Oggetto.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T16:15:54.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Program.cs",
+              "RelativeDocumentMoniker": "Lez04_09_Esercizio\\Program.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Program.cs",
+              "RelativeToolTip": "Lez04_09_Esercizio\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowCcAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T16:11:29.419Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
