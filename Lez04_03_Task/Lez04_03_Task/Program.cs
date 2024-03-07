@@ -18,7 +18,7 @@ namespace Lez04_03_Task
             */
             
             bool continua = true;
-            void checkContinua(string input)
+            void checkContinua(string? input)
             {
                 Console.WriteLine("Premi c per crearne un'altro veicolo, altro per uscire");
                 input = Console.ReadLine().ToLower().Trim();
@@ -28,17 +28,17 @@ namespace Lez04_03_Task
                 }
             }
             do
-            {
-                Console.WriteLine("Scegli il tipo di veicolo tra automobile o moto");
-                string input = Console.ReadLine().ToLower().Trim();
+            { 
                 try
                 {
+                    Console.WriteLine("Scegli il tipo di veicolo tra automobile o moto");
+                    string input = Console.ReadLine().ToLower().Trim();
                     if (input == "automobile")
                     {
                         Console.WriteLine("Scegli la marca");
-                        string marca = Console.ReadLine();
+                        string? marca = Console.ReadLine();
                         Console.WriteLine("Scegli il numero di porte");
-                        string numporte = Console.ReadLine();
+                        string? numporte = Console.ReadLine();
                         int myInt = int.Parse(numporte);
                         Automobile macchina = new Automobile(marca, myInt);
                         Console.WriteLine($"Marca: {macchina.Marca}\nNumero porte: {macchina.NumPorte}");
@@ -47,9 +47,9 @@ namespace Lez04_03_Task
                     else if (input == "moto")
                     {
                         Console.WriteLine("Scegli la marca");
-                        string marca = Console.ReadLine();
+                        string? marca = Console.ReadLine();
                         Console.WriteLine("Scegli la cilindrata");
-                        string cilindrata = Console.ReadLine();
+                        string? cilindrata = Console.ReadLine();
                         int myInt = int.Parse(cilindrata);
                         Moto moto = new Moto(marca, myInt);
                         Console.WriteLine($"Marca: {moto.Marca}\nNumero porte: {moto.Cilindrata}");
