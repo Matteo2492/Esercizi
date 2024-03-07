@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj",
+      "projectUniqueName": "C:\\Users\\BS00000000\\Desktop\\GIT\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj",
       "projectName": "Lez04_09_Esercizio",
-      "projectPath": "E:\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj",
+      "projectPath": "C:\\Users\\BS00000000\\Desktop\\GIT\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\Lez04_09_Esercizio.csproj",
       "packagesPath": "C:\\Users\\BS00000000\\.nuget\\packages\\",
-      "outputPath": "E:\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\obj\\",
+      "outputPath": "C:\\Users\\BS00000000\\Desktop\\GIT\\Lez04_09_Esercizio\\Lez04_09_Esercizio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BS00000000\\AppData\\Roaming\\NuGet\\NuGet.Config",
