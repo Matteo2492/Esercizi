@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BS00000000\\Desktop\\GIT\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Le05_06.csproj": {}
+    "E:\\Le05_06\\Le05_06\\Le05_06.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BS00000000\\Desktop\\GIT\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Le05_06.csproj": {
+    "E:\\Le05_06\\Le05_06\\Le05_06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BS00000000\\Desktop\\GIT\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Le05_06.csproj",
+        "projectUniqueName": "E:\\Le05_06\\Le05_06\\Le05_06.csproj",
         "projectName": "Le05_06",
-        "projectPath": "C:\\Users\\BS00000000\\Desktop\\GIT\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Le05_06.csproj",
+        "projectPath": "E:\\Le05_06\\Le05_06\\Le05_06.csproj",
         "packagesPath": "C:\\Users\\BS00000000\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BS00000000\\Desktop\\GIT\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\obj\\",
+        "outputPath": "E:\\Le05_06\\Le05_06\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BS00000000\\AppData\\Roaming\\NuGet\\NuGet.Config",

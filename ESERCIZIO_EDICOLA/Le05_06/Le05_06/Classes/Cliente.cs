@@ -33,5 +33,9 @@ namespace Le05_06.Classes
         {
             return$"[CLIENTE] Nominativo: {Nominativo}, Indirizzo consegna: {Indirizzo}, Codice Abbonamento: {Abbonamento}";
         }
+        public string ToCSV()
+        {
+            return $"{Nominativo};{Indirizzo};{Abbonamento}";
+        }
     }
 }

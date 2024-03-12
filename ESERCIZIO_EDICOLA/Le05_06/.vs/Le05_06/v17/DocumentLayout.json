@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\utente\\source\\repos\\Le05_06\\",
+  "WorkspaceRootPath": "E:\\Le05_06\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\classes\\edicola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\edicola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\classes\\pubblicazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\pubblicazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\classes\\rivista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\rivista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\classes\\edicola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\edicola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\classes\\giornale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\classes\\giornale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\giornale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\source\\repos\\le05_06\\le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\classes\\pubblicazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\pubblicazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|e:\\le05_06\\le05_06\\classes\\rivista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\rivista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 351,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Classes\\Cliente.cs",
+              "RelativeDocumentMoniker": "Le05_06\\Classes\\Cliente.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Classes\\Cliente.cs",
+              "RelativeToolTip": "Le05_06\\Classes\\Cliente.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswBYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:57:35.26Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Edicola.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Edicola.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Classes\\Edicola.cs",
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Edicola.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Edicola.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Classes\\Edicola.cs",
               "RelativeToolTip": "Le05_06\\Classes\\Edicola.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAmwMAAAAARAAAA",
+              "ViewState": "AQIAAG8BAAAAAAAAAAAUwHwBAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T15:24:11.107Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Cliente.cs",
-              "RelativeDocumentMoniker": "Le05_06\\Classes\\Cliente.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Cliente.cs",
-              "RelativeToolTip": "Le05_06\\Classes\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T13:57:35.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Rivista.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Rivista.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Classes\\Rivista.cs",
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Rivista.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Rivista.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Classes\\Rivista.cs",
               "RelativeToolTip": "Le05_06\\Classes\\Rivista.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBAAAACbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:56:15.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Giornale.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Giornale.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Classes\\Giornale.cs",
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Giornale.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Giornale.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Classes\\Giornale.cs",
               "RelativeToolTip": "Le05_06\\Classes\\Giornale.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:56:06.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Pubblicazioni.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Pubblicazioni.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Classes\\Pubblicazioni.cs",
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Pubblicazioni.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Classes\\Pubblicazioni.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Classes\\Pubblicazioni.cs",
               "RelativeToolTip": "Le05_06\\Classes\\Pubblicazioni.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAqwA0AAAAYAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:54:36.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Program.cs",
+              "DocumentMoniker": "E:\\Le05_06\\Le05_06\\Program.cs",
               "RelativeDocumentMoniker": "Le05_06\\Program.cs",
-              "ToolTip": "C:\\Users\\utente\\source\\repos\\Le05_06\\Le05_06\\Program.cs",
+              "ToolTip": "E:\\Le05_06\\Le05_06\\Program.cs",
               "RelativeToolTip": "Le05_06\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBQAAAAvAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:04:16.562Z",
               "EditorCaption": ""

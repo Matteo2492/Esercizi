@@ -1,4 +1,5 @@
 ﻿using Le05_06.Classes;
+using System.IO;
 
 namespace Le05_06
 {
@@ -6,8 +7,69 @@ namespace Le05_06
     {
         static void Main(string[] args)
         {
-            bool continua = true;
             Edicola edicola = new Edicola();
+
+            string pathClienti = "C:\\Users\\BS00000000\\Desktop\\Clienti\\clienti.txt";
+            string pathRiv = "C:\\Users\\BS00000000\\Desktop\\Pubblicazioni\\riviste.txt";
+            string pathGio = "C:\\Users\\BS00000000\\Desktop\\Pubblicazioni\\giornali.txt";
+            
+            try
+            {
+                    using (StreamReader sr = new StreamReader(pathClienti))
+                    {
+                        string? line;
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            string[] array = line.Split(';');
+                            Cliente cliente = new Cliente(array[0], array[1], array[2]);
+                            edicola.listaClienti.Add(cliente);
+                        }
+                    }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            try
+            {
+                using (StreamReader sr = new StreamReader(pathRiv, true))
+                {
+                    string? line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        string[] array = line.Split(';');
+                        Rivista rivista;
+                        rivista = new Rivista(array[0], array[1], Convert.ToDateTime(array[2]), Convert.ToInt32(array[3]), Convert.ToDouble(array[4]), Convert.ToInt32(array[5]));
+                        edicola.listaPubblicazioni.Add(rivista);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(pathGio, true))
+                {
+                    string? line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        string[] array = line.Split(';');
+                        Giornale giornale;
+                        giornale = new Giornale(array[0], array[1], Convert.ToDateTime(array[2]), Convert.ToInt32(array[3]), Convert.ToDouble(array[4]), Convert.ToInt32(array[5]));
+                        edicola.listaPubblicazioni.Add(giornale);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            bool continua = true;
+            
             Console.WriteLine($"Benvenuto nel programma gestisci Edicola\n{edicola.NomeEdicola}\nIndirizzo: {edicola.ViaEedicola}");
             
             do

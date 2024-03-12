@@ -12,12 +12,6 @@ namespace Le05_06.Classes
         public string? Titolo { get; protected set; }
         public DateTime DataPubblicazione {  get; protected set; }
 
-        private DateTime? datavendita;
-        public DateTime? DataVendita
-        {
-            get { return datavendita; }
-            set { datavendita = value; }
-        }
 
         private int stock;
         public int Stock
@@ -26,8 +20,13 @@ namespace Le05_06.Classes
             set { stock = value; }
         }
 
-        public float Prezzo {  get; protected set; }
+        public double Prezzo {  get; protected set; }
+
+        public int NumeroVendite = 0;
 
         public abstract void stampaDettaglio();
+
+        public abstract string ToCSV();
+        public abstract string venditaCSV();
     }
 }

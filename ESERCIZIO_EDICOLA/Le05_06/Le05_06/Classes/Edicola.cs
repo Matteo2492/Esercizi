@@ -13,8 +13,8 @@ namespace Le05_06.Classes
         public string NomeEdicola = "La mia bella edicola";
         public string ViaEedicola = "Via delle pietre condite 1";
 
-        List<Cliente> listaClienti { get; set; } = new List<Cliente>();
-        List<Pubblicazioni> listaPubblicazioni { get; set; } = new List<Pubblicazioni>();
+        public List<Cliente> listaClienti { get; set; } = new List<Cliente>();
+        public List<Pubblicazioni> listaPubblicazioni { get; set; } = new List<Pubblicazioni>();
         public void GestisciPubb()
         {
             bool continua = true;
@@ -69,12 +69,12 @@ namespace Le05_06.Classes
                     Console.WriteLine("\nScrivi il numero di stock");
                     int Stock = int.Parse(Console.ReadLine());
                     Console.WriteLine("\nScegli il prezzo");
-                    float Prezzo = int.Parse(Console.ReadLine());
-                    Giornale giornale = new Giornale(Redazione,Titolo,DataPubblicazione,null, Stock, Prezzo);
-
+                    double Prezzo = int.Parse(Console.ReadLine());
+                    Giornale giornale = new Giornale(Redazione,Titolo,DataPubblicazione, Stock, Prezzo,0);
                     listaPubblicazioni.Add(giornale);
                     Console.WriteLine("\nGiornale inserito con successo");
                     giornale.stampaDettaglio();
+                    inserisciGiornale(giornale);
                 }
                 else if (scelta == "2")
                 {
@@ -86,13 +86,12 @@ namespace Le05_06.Classes
                     Console.WriteLine("\nScrivi il numero di stock");
                     int Stock = int.Parse(Console.ReadLine());
                     Console.WriteLine("\nScegli il prezzo");
-                    float Prezzo = int.Parse(Console.ReadLine());
-
-                    Rivista rivista = new Rivista(Categoria, Titolo, DataPubblicazione, null, Stock, Prezzo);
-
+                    double Prezzo = int.Parse(Console.ReadLine());
+                    Rivista rivista = new Rivista(Categoria, Titolo, DataPubblicazione, Stock, Prezzo,0);
                     listaPubblicazioni.Add(rivista);
                     Console.WriteLine("\nRivista inserita con successo");
                     rivista.stampaDettaglio();
+                    inserisciRivista(rivista);
                 }
                 else
                 {
@@ -153,7 +152,9 @@ namespace Le05_06.Classes
                     Console.WriteLine("Scegli una pubblicazione da vendere tramite il numero associato");
                     RecapPubb();
                     int input = int.Parse(Console.ReadLine());
+                    Console.WriteLine("\nPubblicazione scelta:");
                     Console.WriteLine(listaPubblicazioni[input].Titolo);
+                    Console.WriteLine(listaPubblicazioni[input].Stock);
                     Console.WriteLine("\nScegli la quantità da vendere");
                     int numero = int.Parse(Console.ReadLine());
                     if (numero > listaPubblicazioni[input].Stock)
@@ -164,8 +165,9 @@ namespace Le05_06.Classes
                     else
                     {
                         listaPubblicazioni[input].Stock -= numero;
-                        listaPubblicazioni[input].DataVendita = DateTime.Now;
+                        listaPubblicazioni[input].NumeroVendite += numero;
                         Console.WriteLine($"\nVendute {numero} copie di {listaPubblicazioni[input].Titolo}");
+                        inserisciVendite(listaPubblicazioni[input]);
                     }   
                 }
                 else if (scelta == "2")
@@ -183,7 +185,7 @@ namespace Le05_06.Classes
             bool continua = true;
             do
             {
-                Console.WriteLine("Per cercare una pubblicazione inserisci un titolo o categoria, digita f per filtrare in base alla disponibilità di stock, oppure digita una parola o numero chiave");
+                Console.WriteLine("Per cercare una pubblicazione inserisci un titolo o categoria, digita f per filtrare in base alla disponibilità di stock, oppure digita una parola chiave");
                 string? scelta = Console.ReadLine();
                 if(scelta is not null && scelta != "f")
                 {
@@ -262,6 +264,7 @@ namespace Le05_06.Classes
 
                     listaClienti.Add(cliente);
                     Console.WriteLine("\nCliente inserito con successo");
+                    inserisciClienti(cliente);
                     Console.WriteLine(cliente);
                 }
                 else if (scelta == "2")
@@ -271,7 +274,6 @@ namespace Le05_06.Classes
                     Console.WriteLine("\nSeleziona il numero associato");
                     int input = int.Parse(Console.ReadLine());
                     Console.WriteLine(listaClienti[input].Nominativo);
-                    
                     Console.WriteLine("Scegli la pubblicazione");
                     RecapPubb();
                     Console.WriteLine("\nSeleziona il numero associato");
@@ -286,9 +288,10 @@ namespace Le05_06.Classes
                     }
                     else
                     {
-                        listaPubblicazioni[input].Stock = -numero;
-                        listaPubblicazioni[input].DataVendita = DateTime.Now;
+                        listaPubblicazioni[input].Stock -= numero;
+                        listaPubblicazioni[input].NumeroVendite += numero;
                         Console.WriteLine($"\nVendute {numero} copie di {listaPubblicazioni[input].Titolo}, al cliente {listaClienti[input].Nominativo}\nIndirizzo di consegna{listaClienti[input].Indirizzo}");
+                        inserisciVendite(listaPubblicazioni[input]);
                     }
                  
                 }
@@ -321,33 +324,86 @@ namespace Le05_06.Classes
         }
         public void RecapVendite()
         {
+            int number = 0;
+            foreach (Pubblicazioni item in listaPubblicazioni)
+            {
+                if (item.NumeroVendite > 0)
+                {
+                        Console.WriteLine($"Pubblicazione: {item.Titolo}\nNumero vendite: {item.NumeroVendite}");
+                    number++;
+                }
+            }
+            if(number == 0)
+            {
+                Console.WriteLine("Nessuna vendita effettuata");
+            }
+        }
+        public void inserisciRivista(Rivista item)
+        {
+            string path = "C:\\Users\\BS00000000\\Desktop\\Pubblicazioni\\riviste.txt";
             try
             {
-                foreach (Pubblicazioni item in listaPubblicazioni)
-                {
-                    if (item.DataVendita is not null)
+                if (path is not null)
+                    using (StreamWriter sw = new StreamWriter(path))
                     {
-                        string? path = $"C:\\Users\\BS00000000\\Desktop\\Vendite\\scontrini_{item.DataVendita.Value.ToString("yyyy/MM/dd")}.csv.txt";
-                        using (StreamWriter sw = new StreamWriter(path))
-                        {
-                            item.stampaDettaglio();
-                            Console.WriteLine($"Data Vendita: {item.DataVendita}");
-                            sw.WriteLine($"Titolo pubblicazione: {item.Titolo}, Data vendita: {item.DataVendita.Value.ToString("yyyy/MM/dd")}");
-                        }       
+                        sw.WriteLine(item.ToCSV());
                     }
-                    else
-                    {
-                        Console.WriteLine("\nNessuna vendita effettuata...");
-                    }
-                }
-         
-                
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            
+        }
+        public void inserisciGiornale(Giornale item)
+        {
+            string path = "C:\\Users\\BS00000000\\Desktop\\Pubblicazioni\\giornali.txt";
+            try
+            {
+                if (path is not null)
+                    using (StreamWriter sw = new StreamWriter(path, true))
+                    {
+                        sw.WriteLine(item.ToCSV());
+                    }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        public void inserisciVendite(Pubblicazioni item)
+        {
+            DateTime dataoggi = DateTime.Now;
+            string formattedDate = dataoggi.ToString("yyyy_MM_dd");
+            string path = $"C:\\Users\\BS00000000\\Desktop\\Vendite\\scontrini_{formattedDate}.csv";
+            try
+            {
+                if (path is not null)
+                    using (StreamWriter sw = new StreamWriter(path, true))
+                    {
+                        sw.WriteLine(item.venditaCSV());
+                    }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        public void inserisciClienti(Cliente item)
+        {
+            string path = "C:\\Users\\BS00000000\\Desktop\\Clienti\\clienti.txt";
+            try
+            {
+                if (path is not null)
+                    using (StreamWriter sw = new StreamWriter(path, true))
+                    {
+                            sw.WriteLine(item.ToCSV());
+                    }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                }
         }
         public void RecapClienti()
         {
@@ -358,28 +414,13 @@ namespace Le05_06.Classes
             else
             {
                 int number = 0;
-                string? path = "C:\\Users\\BS00000000\\Desktop\\Clienti\\clienti.txt";
-                try
+                foreach (Cliente item in listaClienti)
                 {
-                    using (StreamWriter sw = new StreamWriter(path))
-                    {
-                        foreach (Cliente item in listaClienti)
-                        {
-                            Console.WriteLine($"\n{number}<---selezionatore");
-                            Console.WriteLine(item);
-                            sw.WriteLine(item);
-                            number++;
-                        }
-                    }
+                    Console.WriteLine($"\n{number}<---selezionatore");
+                    Console.WriteLine(item);
+                    number++;
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-           
-            
-           
+            }    
         }
         public async Task Spam()
         {

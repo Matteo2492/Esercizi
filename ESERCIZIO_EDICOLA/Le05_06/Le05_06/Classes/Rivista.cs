@@ -14,19 +14,27 @@ namespace Le05_06.Classes
         {
             
         }
-        public Rivista(string? categoria, string? titolo, DateTime datapubblicazione, DateTime? datavendita, int stock, float prezzo)
+        public Rivista(string? titolo, string? categoria,  DateTime datapubblicazione, int stock, double prezzo, int numerovendite)
         {
             Categoria = categoria;
             Titolo = titolo;
             DataPubblicazione = datapubblicazione;
-            DataVendita = datavendita;
             Stock = stock;
             Prezzo = prezzo;
+            NumeroVendite = numerovendite;
         }
 
         public override void stampaDettaglio()
         {
             Console.WriteLine($"--[RIVISTA] Titolo: {Titolo}\nData pubblicazione: {DataPubblicazione}\nCategoria: {Categoria}\nStock: {Stock}\nPrezzo: {Prezzo}");
+        }
+        public override string ToCSV()
+        {
+                return $"{Titolo};{Categoria};{DataPubblicazione};{Stock};{Prezzo};{NumeroVendite}";
+        }
+        public override string venditaCSV()
+        {
+            return $"{Titolo};{Categoria};{DataPubblicazione};{Stock};{Prezzo};{NumeroVendite}";
         }
     }
 }

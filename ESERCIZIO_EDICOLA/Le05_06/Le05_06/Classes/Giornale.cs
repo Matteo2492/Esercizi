@@ -13,19 +13,27 @@ namespace Le05_06.Classes
         {
 
         }
-        public Giornale(string? redazione, string? titolo, DateTime datapubblicazione, DateTime? datavendita, int stock, float prezzo)
+        public Giornale(string? titolo, string? redazione,  DateTime datapubblicazione, int stock, double prezzo,int numerovendite)
         {
             Redazione = redazione;
             Titolo = titolo;
             DataPubblicazione = datapubblicazione;
-            DataVendita = datavendita;
             Stock = stock;
             Prezzo = prezzo;
+            NumeroVendite = numerovendite;
         }
        
         public override void stampaDettaglio()
         {
-            Console.WriteLine($"--[GIORNALE] Redazione: {Redazione}\nData pubblicaizone: {DataPubblicazione}\nStock: {Stock}\nPrezzo: {Prezzo}");
+            Console.WriteLine($"--[GIORNALE]Titolo: {Titolo}\nRedazione: {Redazione}\nData pubblicaizone: {DataPubblicazione}\nStock: {Stock}\nPrezzo: {Prezzo}");
+        }
+        public override string ToCSV()
+        {
+            return $"{Titolo};{Redazione};{DataPubblicazione};{Stock};{Prezzo};{NumeroVendite}";
+        }
+        public override string venditaCSV()
+        {
+            return $"{Titolo};{Redazione};{DataPubblicazione};{Stock};{Prezzo};{NumeroVendite}";
         }
     }
 }
