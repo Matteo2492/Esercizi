@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\edicola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizio_edicola\\le05_06\\le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizio_edicola\\le05_06\\le05_06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizio_edicola\\le05_06\\le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|solutionrelative:le05_06\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB3ECEE2-AF55-4919-810A-9153ACCFEB18}|Le05_06\\Le05_06.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizio_edicola\\le05_06\\le05_06\\classes\\giornale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Classes\\Cliente.cs",
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Cliente.cs",
@@ -47,8 +47,7 @@
               "ViewState": "AQIAABEAAAAAAAAAAADwvxYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:57:35.26Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Le05_06\\Classes\\Edicola.cs",
               "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Classes\\Edicola.cs",
               "RelativeToolTip": "Le05_06\\Classes\\Edicola.cs",
-              "ViewState": "AQIAAIsBAAAAAAAAAAAqwHwBAAAlAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwA0AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T15:24:11.107Z",
               "IsPinned": true,
@@ -102,13 +101,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Program.cs",
               "RelativeDocumentMoniker": "Le05_06\\Program.cs",
               "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\ESERCIZIO_EDICOLA\\Le05_06\\Le05_06\\Program.cs",
               "RelativeToolTip": "Le05_06\\Program.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwBoAAAANAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAgwBoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:04:16.562Z",
               "EditorCaption": ""
