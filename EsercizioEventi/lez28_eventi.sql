@@ -1,3 +1,4 @@
+USE acc_lez28_eventi;
 CREATE TABLE Partecipanti (
 	PartecipanteID INT PRIMARY KEY IDENTITY (1,1),
 	Nome VARCHAR(250) NOT NULL,
@@ -27,3 +28,5 @@ CREATE TABLE Eventi (
 );
 
 SELECT * FROM Partecipanti;
+SELECT * FROM Risorse;
+SELECT * FROM Eventi;
