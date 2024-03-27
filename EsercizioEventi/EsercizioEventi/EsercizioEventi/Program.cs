@@ -8,6 +8,9 @@ namespace EsercizioEventi
     {
         static void Main(string[] args)
         {
+            
+
+
             Inizio.GestioneInput();
         }
     }

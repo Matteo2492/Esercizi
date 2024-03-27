@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AqSc2OnAJCKzy+MNAWPp1qVkBi7EBETqQvjvDolQY1kwdrMmDzFz5ymfCEpQ+nKH/GfeHC5QsopanZKQcSeDkw==",
+  "dgSpecHash": "8+3pvpdIuZhNOwtcCLrCzVMchbEqWdyKe8vE9FqwsoYTx/58UoBeaQR4L0im9O67YPYqRffl9+1kwy6oLCYEyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\utente\\source\\repos\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi.csproj",
+  "projectFilePath": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\utente\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\utente\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
