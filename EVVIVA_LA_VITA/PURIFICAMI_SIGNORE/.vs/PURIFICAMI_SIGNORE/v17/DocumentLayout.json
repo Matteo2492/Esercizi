@@ -3,56 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionevariazione.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionevariazione.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneprodotti.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneprodotti.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneutente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneutente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneprodotti.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneprodotti.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionecategorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionecategorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\models\\variazione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\models\\variazione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionevariazione.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionevariazione.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneutente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneutente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionevariazione.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionevariazione.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneprodotti.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneprodotti.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionecategorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionecategorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\dal\\utentedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\dal\\utentedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\models\\prodotto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\models\\prodotto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionecategorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionecategorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionevariazione.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionevariazione.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\models\\variazione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\models\\variazione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestioneutente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestioneutente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\gestionecategorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\gestionecategorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\dal\\utentedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|solutionrelative:purificami_signore\\dal\\utentedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF3ED5CB-39FB-4C06-A4B0-DBC9FF72967B}|PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE.csproj|c:\\users\\utente\\source\\repos\\purificami_signore\\purificami_signore\\dal\\categoriadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,37 +70,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 116,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Prodotto.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\Models\\Prodotto.cs",
+              "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\Models\\Prodotto.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\Models\\Prodotto.cs",
+              "RelativeToolTip": "PURIFICAMI_SIGNORE\\Models\\Prodotto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:20:54.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GestioneVariazione.xaml.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneVariazione.xaml.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneVariazione.xaml.cs",
               "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneVariazione.xaml.cs",
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\GestioneVariazione.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAjwCoAAABNAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAjwDcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T16:20:59.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Variazione.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\Models\\Variazione.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\Models\\Variazione.cs",
               "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\Models\\Variazione.cs",
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\Models\\Variazione.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T16:03:03.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GestioneVariazione.xaml",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneVariazione.xaml",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneVariazione.xaml",
@@ -114,14 +131,14 @@
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneUtente.xaml.cs",
               "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneUtente.xaml.cs",
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\GestioneUtente.xaml.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAcwEoAAAAeAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwC8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T15:58:25.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "GestioneUtente.xaml",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneUtente.xaml",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneUtente.xaml",
@@ -133,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UtenteDAL.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\DAL\\UtenteDAL.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\DAL\\UtenteDAL.cs",
@@ -141,12 +158,11 @@
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\DAL\\UtenteDAL.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAmwG0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:52:04.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T15:52:04.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\Models\\Utente.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\Models\\Utente.cs",
@@ -159,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CategoriaDAL.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\DAL\\CategoriaDAL.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\DAL\\CategoriaDAL.cs",
@@ -167,25 +183,24 @@
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\DAL\\CategoriaDAL.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAwwCkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:39:18.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T15:39:18.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GestioneProdotti.xaml.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneProdotti.xaml.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneProdotti.xaml.cs",
               "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneProdotti.xaml.cs",
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\GestioneProdotti.xaml.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAwEoAAAAgAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAgwDIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T15:25:23.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "GestioneProdotti.xaml",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneProdotti.xaml",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneProdotti.xaml",
@@ -197,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "GestioneCategorie.xaml",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneCategorie.xaml",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneCategorie.xaml",
@@ -209,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "GestioneCategorie.xaml.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\GestioneCategorie.xaml.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\GestioneCategorie.xaml.cs",
@@ -217,18 +232,17 @@
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\GestioneCategorie.xaml.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAowB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T14:27:21.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T14:27:21.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PURIFICAMI_SIGNORE\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\utente\\source\\repos\\PURIFICAMI_SIGNORE\\PURIFICAMI_SIGNORE\\MainWindow.xaml.cs",
               "RelativeToolTip": "PURIFICAMI_SIGNORE\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAgwCkAAAAcAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAA5wCgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T13:24:40.794Z",
               "EditorCaption": ""

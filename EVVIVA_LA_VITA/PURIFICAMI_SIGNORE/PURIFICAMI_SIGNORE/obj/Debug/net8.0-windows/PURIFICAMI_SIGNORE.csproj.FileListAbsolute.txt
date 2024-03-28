@@ -146,3 +146,7 @@ C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net
 C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneProdotti.baml
 C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneCategorie.g.cs
 C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneCategorie.baml
+C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneUtente.g.cs
+C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneVariazione.g.cs
+C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneUtente.baml
+C:\Users\utente\source\repos\PURIFICAMI_SIGNORE\PURIFICAMI_SIGNORE\obj\Debug\net8.0-windows\GestioneVariazione.baml

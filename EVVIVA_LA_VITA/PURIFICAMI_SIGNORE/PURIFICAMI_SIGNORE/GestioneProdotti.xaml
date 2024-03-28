@@ -39,7 +39,7 @@
                     <DataGridTextColumn Header="ID" Binding="{Binding ProdottoId}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Descrizione" Binding="{Binding Descrizione}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="CategoriaRIF" Binding="{Binding CategoriaRIF.Nome}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="CategoriaRIF" Binding="{Binding CategoriaRif}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

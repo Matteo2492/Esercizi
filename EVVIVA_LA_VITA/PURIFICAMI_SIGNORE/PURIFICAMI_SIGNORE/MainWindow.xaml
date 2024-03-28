@@ -12,6 +12,8 @@
             <Button x:Name="btnCategorie" Click="btnCategorie_Click">Vai</Button>
             <Label>Gestione Prodotti</Label>
             <Button x:Name="btnProdotti" Click="btnProdotti_Click">Vai</Button>
+            <Label>Gestione Variazioni</Label>
+            <Button x:Name="btnVariazioni" Click="btnVariazioni_Click">Vai</Button>
             <Label>Gestione Utenti</Label>
             <Button x:Name="btnUtenti" Click="btnUtenti_Click">Vai</Button>
         </StackPanel>

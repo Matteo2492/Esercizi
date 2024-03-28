@@ -125,7 +125,7 @@ namespace PURIFICAMI_SIGNORE {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PURIFICAMI_SIGNORE;V1.0.0.0;component/gestionecategorie.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PURIFICAMI_SIGNORE;component/gestionecategorie.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GestioneCategorie.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -40,8 +40,8 @@ namespace PURIFICAMI_SIGNORE
             int codice = Convert.ToInt32(this.tbCodice.Text);
             decimal prezzo = Convert.ToDecimal(this.tbPrezzo.Text);
             decimal prezzoOfferrta = Convert.ToDecimal(this.tbPrezzoOfferta.Text);
-            DateOnly dataInizio = Convert.ToDateTime(this.tbDataInizio.Text);
-            DateOnly dataFine = Convert.ToDateTime(this.tbDataFine.Text);
+            //DateOnly dataInizio = Convert.ToDateTime(this.tbDataInizio.Text);
+            //DateOnly dataFine = Convert.ToDateTime(this.tbDataFine.Text);
             string? colore = this.tbColore.Text;
             string? taglia = this.tbTaglia.Text;
             int quantita = Convert.ToInt32(this.tbQuantita.Text);
@@ -52,8 +52,8 @@ namespace PURIFICAMI_SIGNORE
                 Codice = codice,
                 Prezzo = prezzo,
                 PrezzoOfferta = prezzoOfferrta,
-                DataInizioOfferta = dataInizio,
-                DataFineOfferta = dataFine,
+                //DataInizioOfferta = dataInizio,
+                //DataFineOfferta = dataFine,
                 Colore = colore,
                 Taglia = taglia,
                 Quantita = quantita,
@@ -84,14 +84,14 @@ namespace PURIFICAMI_SIGNORE
             this.tbLink.Text = "";
             this.tbProdottoRIF.Text = "";
         }
-        private void btnUpdateU_Click(object sender, RoutedEventArgs e)
+        private void btnUpdateV_Click(object sender, RoutedEventArgs e)
         {
             int id = Convert.ToInt32(this.tbIDVU.Text);
             int codice = Convert.ToInt32(this.tbCodice.Text);
             decimal prezzo = Convert.ToDecimal(this.tbPrezzo.Text);
             decimal prezzoOfferrta = Convert.ToDecimal(this.tbPrezzoOfferta.Text);
-            DateOnly dataInizio = Convert.ToDateTime(this.tbDataInizio.Text);
-            DateOnly dataFine = Convert.ToDateTime(this.tbDataFine.Text);
+            //DateOnly dataInizio = Convert.ToDateTime(this.tbDataInizio.Text);
+            //DateOnly dataFine = Convert.ToDateTime(this.tbDataFine.Text);
             string? colore = this.tbColore.Text;
             string? taglia = this.tbTaglia.Text;
             int quantita = Convert.ToInt32(this.tbQuantita.Text);
@@ -104,8 +104,8 @@ namespace PURIFICAMI_SIGNORE
                 Codice = codice,
                 Prezzo = prezzo,
                 PrezzoOfferta = prezzoOfferrta,
-                DataInizioOfferta = dataInizio,
-                DataFineOfferta = dataFine,
+                //DataInizioOfferta = dataInizio,
+                //DataFineOfferta = dataFine,
                 Colore = colore,
                 Taglia = taglia,
                 Quantita = quantita,
@@ -137,7 +137,7 @@ namespace PURIFICAMI_SIGNORE
             this.tbLink.Text = "";
             this.tbProdottoRIF.Text = "";
         }
-        private void btnDeleteP_Click(object sender, RoutedEventArgs e)
+        private void btnDeleteV_Click(object sender, RoutedEventArgs e)
         {
             int nome = Convert.ToInt32(this.tbIDVD.Text);
 

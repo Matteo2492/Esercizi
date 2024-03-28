@@ -95,7 +95,7 @@ namespace PURIFICAMI_SIGNORE
             this.tbIndirizzo.Text = "";
             this.tbEmail.Text = "";
         }
-        private void btnDeleteP_Click(object sender, RoutedEventArgs e)
+        private void btnDeleteU_Click(object sender, RoutedEventArgs e)
         {
             int nome = Convert.ToInt32(this.tbIDUD.Text);
 

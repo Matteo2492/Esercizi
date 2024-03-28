@@ -36,6 +36,12 @@ namespace PURIFICAMI_SIGNORE
             finestra.Show();
             this.Close();
         }
+        private void btnVariazioni_Click(object sender, RoutedEventArgs e)
+        {
+            GestioneVariazione finestra = new GestioneVariazione();
+            finestra.Show();
+            this.Close();
+        }
         private void btnUtenti_Click(object sender, RoutedEventArgs e)
         {
             GestioneUtente finestra = new GestioneUtente();

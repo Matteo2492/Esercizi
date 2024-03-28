@@ -31,7 +31,7 @@
             <TextBox x:Name="tbLink"></TextBox>
             <Label>Prodotto di riferimento</Label>
             <TextBox x:Name="tbProdottoRIF"></TextBox>
-            <Button x:Name="btnSalvaU" Click="btnSalvaU_Click">Salva</Button>
+            <Button x:Name="btnSalvaV" Click="btnSalvaV_Click">Salva</Button>
 
             <Label>ID UPDATE</Label>
             <TextBox x:Name="tbIDVU"></TextBox>
@@ -74,7 +74,7 @@
                     <DataGridTextColumn Header="Taglia" Binding="{Binding Taglia}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Quantita" Binding="{Binding Quantita}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Link" Binding="{Binding ImmagineLink}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Prodotto" Binding="{Binding ProdottoRIF.Nome}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Prodotto" Binding="{Binding ProdottoRif}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
