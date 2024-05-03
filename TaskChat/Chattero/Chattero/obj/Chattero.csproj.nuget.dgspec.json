@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BS00000000\\Desktop\\EsercizioMatteoC\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj": {}
+    "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BS00000000\\Desktop\\EsercizioMatteoC\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj": {
+    "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BS00000000\\Desktop\\EsercizioMatteoC\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj",
+        "projectUniqueName": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj",
         "projectName": "Chattero",
-        "projectPath": "C:\\Users\\BS00000000\\Desktop\\EsercizioMatteoC\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj",
+        "projectPath": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Chattero.csproj",
         "packagesPath": "C:\\Users\\BS00000000\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BS00000000\\Desktop\\EsercizioMatteoC\\Esercizi\\TaskChat\\Chattero\\Chattero\\obj\\",
+        "outputPath": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BS00000000\\AppData\\Roaming\\NuGet\\NuGet.Config",

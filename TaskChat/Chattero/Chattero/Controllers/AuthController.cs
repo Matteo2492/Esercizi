@@ -60,7 +60,7 @@ namespace Chattero.Controllers
                 return Ok(new Risposta()
                 {
                     Status = "SUCCESS",
-                    Data = _serviceutenti.PerEmail(email)
+                    Data = email
                 });
             }
             return Ok(new Risposta()

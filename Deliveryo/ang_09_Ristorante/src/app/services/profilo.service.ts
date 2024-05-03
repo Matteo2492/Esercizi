@@ -11,13 +11,12 @@ export class ProfiloService {
 
   recuperaProfilo(): Observable<Risposta> {
     let contenutoToken = localStorage.getItem('ilToken');
-    let email = localStorage.getItem('email');
     let headerCustom = new HttpHeaders({
       Authorization: `Bearer ${contenutoToken}`,
     });
 
     return this.http.get<Risposta>(
-      'https://localhost:7198/Utente/profiloutente/'+email,
+      'https://localhost:7198/Utente/profiloutente/',
       { headers: headerCustom }
     );
   }
