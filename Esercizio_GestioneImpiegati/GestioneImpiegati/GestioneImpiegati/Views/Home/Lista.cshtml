@@ -1,0 +1,39 @@
+﻿@model List<GestioneImpiegati.Models.Impiegato>
+
+<h1>Lista dipendenti</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Matricola</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di nascita</th>
+            <th>Ruolo</th>
+            <th>Indirizzo</th>
+            <th>Reparto</th>
+            <th>Citta</th>
+            <th>Provincia</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Impiegato pro in Model)
+        {
+            <tr>
+                <td>@pro.Matricola</td>
+                <td>@pro.Nome</td>
+                <td>@pro.Cognome</td>
+                <td>@pro.DataNasc</td>
+                <td>@pro.Ruolo</td>
+                <td>@pro.Indirizzo</td>
+                <td>@pro.RepartoRif</td>
+                <td>@pro.CittaRif</td>
+                <td>@pro.ProvinciaRif</td>
+                <td>
+                    <button class="btn btn-danger" type="button" onclick="Elimina('@pro.Matricola')">Elimina</button>
+                    <a class="btn btn-warning" href="/Impiegato/Modifica/@pro.ImpiegatoId">Modifica</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

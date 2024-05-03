@@ -1,0 +1,11 @@
+DROP TABLE Prodotti;
+CREATE TABLE Prodotti(
+	prodottoID INT PRIMARY KEY IDENTITY (1,1),
+	codice VARCHAR(250) DEFAULT NEWID(),
+	nome VARCHAR(250) NOT NULL,
+	descrizione TEXT,
+	prezzo DECIMAL(10,2) NOT NULL CHECK (prezzo >= 0),
+	quantita INTEGER DEFAULT 0 CHECK (quantita >= 0),
+	categoria VARCHAR(250) NOT NULL,
+	datacreazine DATETIME DEFAULT CURRENT_TIMESTAMP
+);

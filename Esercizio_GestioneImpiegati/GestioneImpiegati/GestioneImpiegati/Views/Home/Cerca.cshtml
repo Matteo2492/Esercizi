@@ -1,0 +1,36 @@
+﻿@model GestioneImpiegati.Models.Impiegato
+
+<h1>Lista dipendenti</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Matricola</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di nascita</th>
+            <th>Ruolo</th>
+            <th>Indirizzo</th>
+            <th>Reparto</th>
+            <th>Citta</th>
+            <th>Provincia</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.Matricola</td>
+                <td>@Model.Nome</td>
+                <td>@Model.Cognome</td>
+                <td>@Model.DataNasc</td>
+                <td>@Model.Ruolo</td>
+                <td>@Model.Indirizzo</td>
+                <td>@Model.RepartoRif</td>
+                <td>@Model.CittaRif</td>
+                <td>@Model.ProvinciaRif</td>
+                <td>
+                    <button class="btn btn-danger" type="button" onclick="elimina('@Model.Matricola')">Elimina</button>
+                    <a class="btn btn-warning" href="/Provincia/Modifica/@Model.ImpiegatoId">Modifica</a>
+                </td>
+            </tr>
+    </tbody>
+</table>
+

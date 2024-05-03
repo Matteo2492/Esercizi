@@ -1,0 +1,47 @@
+﻿<Window x:Class="PURIFICAMI_SIGNORE.GestioneProdotti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PURIFICAMI_SIGNORE"
+        mc:Ignorable="d"
+        Title="GestioneProdotti" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel Width="250">
+            <Button x:Name="btnBack" Click="btnBack_Click">Back</Button>
+            <Label>GESTIONE PRODOTTI</Label>
+
+            <Label>Nome Prodotto INSERIMENTO</Label>
+            <TextBox x:Name="tbNomeP"></TextBox>
+            <Label>Descrizione</Label>
+            <TextBox x:Name="tbDescrizione"></TextBox>
+            <Label>Id Categoria</Label>
+            <TextBox x:Name="tbCategoriaP"></TextBox>
+            <Button x:Name="btnSalvaP" Click="btnSalvaP_Click">Salva</Button>
+
+            <Label>ID UPDATE</Label>
+            <TextBox x:Name="tbIDPU"></TextBox>
+            <Label>Nome</Label>
+            <TextBox x:Name="tbNomePU"></TextBox>
+            <Label>Descrizione</Label>
+            <TextBox x:Name="tbDescrizioneU"></TextBox>
+            <Label>Id Categoria</Label>
+            <TextBox x:Name="tbCategoriaPU"></TextBox>
+            <Button x:Name="btnUpdateP" Click="btnUpdateP_Click">Salva</Button>
+
+            <Label>ID ELIMINA</Label>
+            <TextBox x:Name="tbIDPD"></TextBox>
+            <Button x:Name="btnDeleteP" Click="btnDeleteP_Click">Salva</Button>
+        </StackPanel>
+        <Grid>
+            <DataGrid x:Name="dgProdotto" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding ProdottoId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Descrizione" Binding="{Binding Descrizione}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="CategoriaRIF" Binding="{Binding CategoriaRif}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>

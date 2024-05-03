@@ -1,0 +1,59 @@
+﻿@model GestioneImpiegati.Models.Impiegato
+
+<h1>Inserisci il tuo dipendente</h1>
+
+<form method="post" asp-controller="Home" asp-action="Salvataggio">
+    <div class="form-group">
+        <label for="Matricola">Matricola</label>
+        <input type="text" class="form-control" asp-for=Matricola />
+    </div>
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" asp-for=Nome />
+    </div>
+    <div class="form-group">
+        <label for="Cognome">Cognome</label>
+        <input type="text" class="form-control" asp-for=Cognome />
+    </div>
+    <div class="form-group">
+        <label for="Datanasc">Data di nascita</label>
+        <input type="datetime" class="form-control" asp-for=DataNasc />
+    </div>
+    <div class="form-group">
+        <label for="Ruolo">Ruolo</label>
+        <input type="text" class="form-control" asp-for=Ruolo />
+    </div>
+    <div class="form-group">
+        <label for="Indirizzo">Indirizzo</label>
+        <input type="text" class="form-control" asp-for=Indirizzo />
+    </div>
+    <div class="form-group">
+        <label for="RepartoRif">Reparto</label>
+        <select type="text" class="form-control" asp-for=RepartoRif>
+            @foreach (Reparto rep in ViewBag.ListaReparti)
+            {
+                <option value="@rep.RepartoId">@rep.Nome</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="CittaRif">Citta</label>
+        <select type="text" class="form-control" asp-for=CittaRif >
+            @foreach (Cittum rep in ViewBag.ListaCitta)
+            {
+                <option value="@rep.Nome">@rep.Nome</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ProvinciaRif">Provincia</label>
+        <select type="text" class="form-control" asp-for=ProvinciaRif >
+            @foreach (Provincium rep in ViewBag.ListaProvince)
+            {
+                <option value="@rep.Sigla">@rep.Sigla</option>
+            }
+        </select>
+    </div>
+    <button class="btn btn-primary btn-block" type="submit">Salva</button>
+</form>
+

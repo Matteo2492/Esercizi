@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TASKINO.props" />
+</Project>

@@ -1,0 +1,82 @@
+﻿<Window x:Class="PURIFICAMI_SIGNORE.GestioneVariazione"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PURIFICAMI_SIGNORE"
+        mc:Ignorable="d"
+        Title="GestioneVariazione" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel Width="250">
+            <Button x:Name="btnBack" Click="btnBack_Click">Back</Button>
+            <Label>GESTIONE Variazione Prodotto</Label>
+
+            <Label>Variazione Codice INSERIMENTO</Label>
+            <TextBox x:Name="tbCodice"></TextBox>
+            <Label>Prezzo</Label>
+            <TextBox x:Name="tbPrezzo"></TextBox>
+            <Label>Prezzo Speciale</Label>
+            <TextBox x:Name="tbPrezzoOfferta"></TextBox>
+            <Label>Data inizio offerta</Label>
+            <TextBox x:Name="tbDataInizio"></TextBox>
+            <Label>Data fine offerta</Label>
+            <TextBox x:Name="tbDataFine"></TextBox>
+            <Label>Colore</Label>
+            <TextBox x:Name="tbColore"></TextBox>
+            <Label>Taglia</Label>
+            <TextBox x:Name="tbTaglia"></TextBox>
+            <Label>Quantita</Label>
+            <TextBox x:Name="tbQuantita"></TextBox>
+            <Label>Link immagine</Label>
+            <TextBox x:Name="tbLink"></TextBox>
+            <Label>Prodotto di riferimento</Label>
+            <TextBox x:Name="tbProdottoRIF"></TextBox>
+            <Button x:Name="btnSalvaV" Click="btnSalvaV_Click">Salva</Button>
+
+            <Label>ID UPDATE</Label>
+            <TextBox x:Name="tbIDVU"></TextBox>
+            <Label>Codice</Label>
+            <TextBox x:Name="tbCodiceV"></TextBox>
+            <Label>Prezzo</Label>
+            <TextBox x:Name="tbPrezzoV"></TextBox>
+            <Label>Prezzo Speciale</Label>
+            <TextBox x:Name="tbPrezzoOffertaV"></TextBox>
+            <Label>Data inizio offerta</Label>
+            <TextBox x:Name="tbDataInizioV"></TextBox>
+            <Label>Data fine offerta</Label>
+            <TextBox x:Name="tbDataFineV"></TextBox>
+            <Label>Colore</Label>
+            <TextBox x:Name="tbColoreV"></TextBox>
+            <Label>Taglia</Label>
+            <TextBox x:Name="tbTagliaV"></TextBox>
+            <Label>Quantita</Label>
+            <TextBox x:Name="tbQuantitaV"></TextBox>
+            <Label>Link immagine</Label>
+            <TextBox x:Name="tbLinkV"></TextBox>
+            <Label>Prodotto di riferimento</Label>
+            <TextBox x:Name="tbProdottoRIFV"></TextBox>
+            <Button x:Name="btnUpdateV" Click="btnUpdateV_Click">Salva</Button>
+
+            <Label>ID ELIMINA</Label>
+            <TextBox x:Name="tbIDVD"></TextBox>
+            <Button x:Name="btnDeleteV" Click="btnDeleteV_Click">Salva</Button>
+        </StackPanel>
+        <Grid>
+            <DataGrid x:Name="dgVariazione" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding VariazioneId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Codice" Binding="{Binding Codice}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Prezzo" Binding="{Binding Prezzo}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Prezzo speciale" Binding="{Binding PrezzoOfferta}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Data inizio offerta" Binding="{Binding DataInizioOfferta}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Data fine offerta" Binding="{Binding DataFineOfferta}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Colore" Binding="{Binding Colore}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Taglia" Binding="{Binding Taglia}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Quantita" Binding="{Binding Quantita}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Link" Binding="{Binding ImmagineLink}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Prodotto" Binding="{Binding ProdottoRif}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>

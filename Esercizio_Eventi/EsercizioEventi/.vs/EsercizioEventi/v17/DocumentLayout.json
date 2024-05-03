@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\models\\partecipanti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\models\\partecipanti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\models\\risorse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\models\\risorse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\models\\eventi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\models\\eventi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\dal\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\dal\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\models\\acclez28eventicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\models\\acclez28eventicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\dal\\csv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\dal\\csv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|c:\\users\\utente\\desktop\\eserciziomatteoc\\esercizioeventi\\esercizioeventi\\esercizioeventi\\interfacciautente\\inizio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46376A1-0877-4DCB-A842-8C8FA1A4D170}|EsercizioEventi\\EsercizioEventi.csproj|solutionrelative:esercizioeventi\\interfacciautente\\inizio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 116,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Csv.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\DAL\\Csv.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\DAL\\Csv.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\DAL\\Csv.cs",
+              "RelativeToolTip": "EsercizioEventi\\DAL\\Csv.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T16:12:34.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Inizio.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\InterfacciaUtente\\Inizio.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\InterfacciaUtente\\Inizio.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\InterfacciaUtente\\Inizio.cs",
+              "RelativeToolTip": "EsercizioEventi\\InterfacciaUtente\\Inizio.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAgwCABAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:43:43.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\DAL\\Crud.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\DAL\\Crud.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\DAL\\Crud.cs",
+              "RelativeToolTip": "EsercizioEventi\\DAL\\Crud.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAJ0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T14:28:02.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Risorse.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Risorse.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\Models\\Risorse.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Risorse.cs",
+              "RelativeToolTip": "EsercizioEventi\\Models\\Risorse.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T14:06:27.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Partecipanti.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Partecipanti.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\Models\\Partecipanti.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Partecipanti.cs",
+              "RelativeToolTip": "EsercizioEventi\\Models\\Partecipanti.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T14:05:59.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Eventi.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Eventi.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\Models\\Eventi.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\Eventi.cs",
+              "RelativeToolTip": "EsercizioEventi\\Models\\Eventi.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T13:59:06.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccLez28EventiContext.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\AccLez28EventiContext.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\Models\\AccLez28EventiContext.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Models\\AccLez28EventiContext.cs",
+              "RelativeToolTip": "EsercizioEventi\\Models\\AccLez28EventiContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T13:58:13.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Program.cs",
+              "RelativeDocumentMoniker": "EsercizioEventi\\Program.cs",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\EsercizioMatteoC\\EsercizioEventi\\EsercizioEventi\\EsercizioEventi\\Program.cs",
+              "RelativeToolTip": "EsercizioEventi\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T13:03:52.198Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

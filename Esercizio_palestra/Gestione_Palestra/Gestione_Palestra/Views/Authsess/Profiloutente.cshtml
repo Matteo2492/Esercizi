@@ -1,0 +1,79 @@
+﻿@model Gestione_Palestra.Models.Utenti
+<h2>Benvenuto, @Model.Nominativo</h2>
+<h3>Lista corsi</h3>
+<div class="row p-2">
+    <table class="table text-light">
+        <thead>
+            <tr>
+                <th>Prenotazioni</th>
+                <th>Nome</th>
+                <th>Descrizione</th>
+                <th>Tipo</th>
+                <th>Data inizio</th>
+                <th>Durata</th>
+                <th>Posti</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Corsi pro in @ViewBag.ListaCorsi)
+            {
+
+                <tr>
+                    @if (ViewBag.ListaPref.Contains(pro.Nome))
+                    {
+                        <td>★</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    <td>@pro.Nome</td>
+                    <td>@pro.Descrizione</td>
+                    <td>@pro.Tipo</td>
+                    <td>@pro.DataInizioCorso</td>
+                    <td>@pro.Durata</td>
+                    <td>@pro.Posti</td>
+                    <td>
+                        <button class="btn btn-danger" type="button" onclick="prenota('@pro.Nome','@Model.Nominativo')">Prenota</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" type="button" onclick="elimina('@pro.Nome','@Model.Nominativo')">Elimina</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function prenota(varCodice,varUtente) {
+        $.ajax(
+            {
+                url: "/Authsess/Prenota/" + varCodice + "/" + varUtente,
+                type: "GET",
+                success: function () {
+                    alert("STAPPO")
+                    window.location.reload();
+                },
+                error: function (errore) {
+                    alert(errore)
+                }
+            }
+        )
+    }
+    function elimina(varCodice,varUtente) {
+        $.ajax(
+            {
+                url: "/Authsess/Elimina/" + varCodice+"/"+varUtente,
+                type: "DELETE",
+                success: function () {
+                    alert("STAPPO")
+                    window.location.reload();
+                },
+                error: function (errore) {
+                    alert(errore)
+                }
+            }
+        )
+    }
+</script>

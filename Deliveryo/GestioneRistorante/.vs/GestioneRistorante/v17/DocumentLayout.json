@@ -1,0 +1,510 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\controllers\\ristorantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\controllers\\ristorantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\services\\utenteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\services\\utenteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\dto\\piattodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\dto\\piattodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\ristorante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\ristorante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\piattorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\piattorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\services\\piattoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\services\\piattoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\dto\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\dto\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\piatto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\piatto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\ordinirepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\ordinirepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\menurepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\menurepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\services\\ristoranteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\services\\ristoranteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\dto\\ristorantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\dto\\ristorantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\services\\ordiniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\services\\ordiniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\dto\\ordinidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\dto\\ordinidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\dto\\utentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\dto\\utentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\ristoranterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\ristoranterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\ordini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\ordini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\utenterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\utenterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\utils\\risposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\utils\\risposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\filters\\autorizzautentepertipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\filters\\autorizzautentepertipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\repo\\idal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\repo\\idal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\gestioneristorante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\gestioneristorante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|c:\\users\\utente\\source\\repos\\gestioneristorante\\gestioneristorante\\models\\deliveryocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF068E7-5BC6-4707-9EFE-EBBE7C876659}|GestioneRistorante\\GestioneRistorante.csproj|solutionrelative:gestioneristorante\\models\\deliveryocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 116,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PiattoRepo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\PiattoRepo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\PiattoRepo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\PiattoRepo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\PiattoRepo.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:38:57.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuDTO.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\MenuDTO.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\DTO\\MenuDTO.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\MenuDTO.cs",
+              "RelativeToolTip": "GestioneRistorante\\DTO\\MenuDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:53:30.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrdiniRepo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\OrdiniRepo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\OrdiniRepo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\OrdiniRepo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\OrdiniRepo.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwEgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:38:49.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrdiniService.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\OrdiniService.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Services\\OrdiniService.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\OrdiniService.cs",
+              "RelativeToolTip": "GestioneRistorante\\Services\\OrdiniService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:39:16.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RistoranteController.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Controllers\\RistoranteController.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Controllers\\RistoranteController.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Controllers\\RistoranteController.cs",
+              "RelativeToolTip": "GestioneRistorante\\Controllers\\RistoranteController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T11:07:51.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ristorante.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Ristorante.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\Ristorante.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Ristorante.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\Ristorante.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T10:59:55.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UtenteController.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Controllers\\UtenteController.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Controllers\\UtenteController.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Controllers\\UtenteController.cs",
+              "RelativeToolTip": "GestioneRistorante\\Controllers\\UtenteController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwB8AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T09:21:17.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PiattoService.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\PiattoService.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Services\\PiattoService.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\PiattoService.cs",
+              "RelativeToolTip": "GestioneRistorante\\Services\\PiattoService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:39:24.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UtenteService.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\UtenteService.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Services\\UtenteService.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\UtenteService.cs",
+              "RelativeToolTip": "GestioneRistorante\\Services\\UtenteService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:52:03.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PiattoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\PiattoDTO.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\DTO\\PiattoDTO.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\PiattoDTO.cs",
+              "RelativeToolTip": "GestioneRistorante\\DTO\\PiattoDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:56:34.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Services\\MenuService.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\MenuService.cs",
+              "RelativeToolTip": "GestioneRistorante\\Services\\MenuService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCMAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:39:09.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Piatto.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Piatto.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\Piatto.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Piatto.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\Piatto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:01:51.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RistoranteService.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\RistoranteService.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Services\\RistoranteService.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Services\\RistoranteService.cs",
+              "RelativeToolTip": "GestioneRistorante\\Services\\RistoranteService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T10:58:11.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuRepo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\MenuRepo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\MenuRepo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\MenuRepo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\MenuRepo.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:38:35.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Menu.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\Menu.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Menu.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\Menu.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T17:47:01.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RistoranteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\RistoranteDTO.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\DTO\\RistoranteDTO.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\RistoranteDTO.cs",
+              "RelativeToolTip": "GestioneRistorante\\DTO\\RistoranteDTO.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T11:01:37.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrdiniDTO.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\OrdiniDTO.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\DTO\\OrdiniDTO.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\OrdiniDTO.cs",
+              "RelativeToolTip": "GestioneRistorante\\DTO\\OrdiniDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:57:00.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UtenteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\UtenteDTO.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\DTO\\UtenteDTO.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\DTO\\UtenteDTO.cs",
+              "RelativeToolTip": "GestioneRistorante\\DTO\\UtenteDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:51:42.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RistoranteRepo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\RistoranteRepo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\RistoranteRepo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\RistoranteRepo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\RistoranteRepo.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T10:58:01.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Ordini.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Ordini.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\Ordini.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Ordini.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\Ordini.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:01:56.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UtenteRepo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\UtenteRepo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\UtenteRepo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\UtenteRepo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\UtenteRepo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:51:52.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Program.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Program.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Program.cs",
+              "RelativeToolTip": "GestioneRistorante\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAhwDwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T09:18:52.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Utente.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Utente.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\Utente.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\Utente.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\Utente.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:52:08.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Risposta.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Utils\\Risposta.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Utils\\Risposta.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Utils\\Risposta.cs",
+              "RelativeToolTip": "GestioneRistorante\\Utils\\Risposta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T09:28:34.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GestioneRistorante\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAUAAAAAAAAAAABRwB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-26T10:45:54.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AutorizzaUtentePerTipo.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Filters\\AutorizzaUtentePerTipo.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Filters\\AutorizzaUtentePerTipo.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Filters\\AutorizzaUtentePerTipo.cs",
+              "RelativeToolTip": "GestioneRistorante\\Filters\\AutorizzaUtentePerTipo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T09:26:54.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\appsettings.json",
+              "RelativeDocumentMoniker": "GestioneRistorante\\appsettings.json",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\appsettings.json",
+              "RelativeToolTip": "GestioneRistorante\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-26T09:31:42.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IDal.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\IDal.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Repo\\IDal.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Repo\\IDal.cs",
+              "RelativeToolTip": "GestioneRistorante\\Repo\\IDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:50:29.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GestioneRistorante.csproj",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\GestioneRistorante.csproj",
+              "RelativeDocumentMoniker": "GestioneRistorante\\GestioneRistorante.csproj",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\GestioneRistorante.csproj",
+              "RelativeToolTip": "GestioneRistorante\\GestioneRistorante.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-26T08:48:44.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DeliveryoContext.cs",
+              "DocumentMoniker": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\DeliveryoContext.cs",
+              "RelativeDocumentMoniker": "GestioneRistorante\\Models\\DeliveryoContext.cs",
+              "ToolTip": "C:\\Users\\utente\\source\\repos\\GestioneRistorante\\GestioneRistorante\\Models\\DeliveryoContext.cs",
+              "RelativeToolTip": "GestioneRistorante\\Models\\DeliveryoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T08:24:54.431Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

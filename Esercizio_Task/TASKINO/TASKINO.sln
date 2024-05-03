@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TASKINO", "TASKINO\TASKINO.csproj", "{A5991454-5306-4338-825E-2A506FC0D96F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5991454-5306-4338-825E-2A506FC0D96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5991454-5306-4338-825E-2A506FC0D96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5991454-5306-4338-825E-2A506FC0D96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5991454-5306-4338-825E-2A506FC0D96F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82FD8E34-AE42-4227-A9C8-E9ADF396FCE2}
+	EndGlobalSection
+EndGlobal

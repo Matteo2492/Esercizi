@@ -1,0 +1,65 @@
+﻿@model Gestione_Palestra.Models.Utenti
+ 
+<h2>Palestra da Peppiniello</h2>
+ 
+<div class="row p-2">
+    
+    <div class="col-md-12 d-none" id="login">
+        <h3>Login</h3>
+        <form method="post" class="form-group" asp-controller="Authsess" asp-action="VerificaCredenziali">
+            <label for="Username">Username</label>
+            <input type="text" class="form-control" asp-for=Nominativo />
+            <label for="Username">Password</label>
+            <input type="password" class="form-control" asp-for=PasswordUtente />
+            <button class="btn btn-primary mt-3">Login</button>
+        </form>
+    </div>
+    
+    <div class="col-md-12" id="signup">
+        <h3>SignUp</h3>
+        <form method="post" class="form-group" asp-controller="Authsess" asp-action="Registrati">
+            <label for="Username">Username</label>
+            <input type="text" class="form-control" asp-for=Nominativo />
+            <label for="Username">Codice</label>
+            <input type="codice" class="form-control" asp-for=Codice />
+            <label for="Username">Password</label>
+            <input type="password" class="form-control" asp-for=PasswordUtente />
+            <button class="btn btn-success mt-3" type="submit">Sign up</button>
+        </form>
+    </div>
+    <button class="btn btn-primary mt-3" onclick="cambio()">Cambio</button>
+</div>
+<h2>Lista corsi</h2>
+<div class="row ">
+    <table class="table table-striped ">
+        <thead>
+            <tr class="text-light">
+                <th>Nome</th>
+                <th>Descrizione</th>
+                <th>Tipo</th>
+                <th>Data inizio</th>
+                <th>Durata</th>
+                <th>Posti</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Corsi pro in @ViewBag.ListaCorsi)
+            {
+                <tr class="text-light">
+                    <td>@pro.Nome</td>
+                    <td>@pro.Descrizione</td>
+                    <td>@pro.Tipo</td>
+                    <td>@pro.DataInizioCorso</td>
+                    <td>@pro.Durata</td>
+                    <td>@pro.Posti</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+    function cambio(){
+        $("#login").toggleClass("d-none");
+        $("#signup").toggleClass("d-none");
+    }
+</script>
