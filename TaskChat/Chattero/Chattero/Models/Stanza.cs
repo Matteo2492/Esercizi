@@ -13,9 +13,9 @@ namespace Chattero.Models
         [BsonElement("desc")]
         public string? Descrizione { get; set; }
         [BsonElement("listMsg")]
-        public List<ObjectId> ListaMessaggi = new List<ObjectId>();
+        public List<ObjectId> ListaMessaggi { get; set; } = new List<ObjectId>();
         [BsonElement("lisUte")]
-        public List<string> ListaUtente = new List<string>();
+        public List<string> ListaUtente { get; set; } = new List<string>();
         [BsonElement("creatore")]
         public string? Creatore { get; set; }
         [BsonElement("datcre")]

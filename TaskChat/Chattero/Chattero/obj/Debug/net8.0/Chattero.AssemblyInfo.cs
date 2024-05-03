@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chattero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dd1c66151923efd4d904cd6f07baf8e69ca4917")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecdfba83ca416ca12cd01f3d32c37493806933f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chattero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chattero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

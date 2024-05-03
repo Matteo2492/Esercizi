@@ -130,6 +130,23 @@ namespace Chattero.Repo
                 IsDeleted = null
             });
         }
+
+        public bool InserisciMessagio(Stanza sta,Messaggio msg)
+        {
+            try
+            {
+                Stanza? temp = GetCode(sta.NomeStanza);
+                var filter = Builders<Stanza>.Filter.Eq(s => s.StanzaID, temp.StanzaID);
+                temp.ListaMessaggi.Add(msg.MessaggioID);
+                stanza.ReplaceOne(filter, temp);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
+            return false;
+        }
         public bool Delete(string email)
         {
             throw new NotImplementedException();

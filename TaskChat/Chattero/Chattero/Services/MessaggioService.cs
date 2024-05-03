@@ -13,16 +13,9 @@ namespace Chattero.Services
         {
             _repo = repo;
         }
-        public bool Inserimento(MessaggioDTO imp)
+        public bool Inserimento(Messaggio imp)
         {
-            Messaggio temp = new Messaggio()
-            {
-                NomeUtente = imp.NomUte,
-                Contenuto = imp.Con,
-                Stanza = imp.Sta,
-                Orario = imp.Ora
-            };
-            return _repo.Insert(temp);
+            return _repo.Insert(imp);
         }
      
         public List<MessaggioDTO> RestituisciTutti()
@@ -52,7 +45,7 @@ namespace Chattero.Services
         }
         public Messaggio? GetCodeModel(MessaggioDTO obj)
         {
-            return _repo.TrovaMsg(obj);
+            return _repo.PrendiDaDatabase(obj);
         }
         public bool EliminaMessaggio(MessaggioDTO objDto)
         {

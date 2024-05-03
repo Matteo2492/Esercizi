@@ -10,6 +10,8 @@ using System.Text;
 
 namespace Chattero.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class AuthController : Controller
     {
         private readonly UtenteService _serviceutenti;

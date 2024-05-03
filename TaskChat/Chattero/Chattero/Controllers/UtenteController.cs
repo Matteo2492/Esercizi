@@ -33,7 +33,17 @@ namespace Chattero.Controllers
                 });
             return BadRequest();
         }
-
+        [HttpPut("aggiorna_utente")]
+        public IActionResult UpdateUtente(UtenteDTO obj)
+        {
+            if (_serviceutenti.AggiornaUtente(obj))
+                return Ok(new Risposta()
+                {
+                    Status = "SUCCESS",
+                    Data = "Aggiornamento avvenuto"
+                });
+            return BadRequest();
+        }
         [HttpDelete("delete")]
         public IActionResult DeleteUser(UtenteDTO obj)
         {

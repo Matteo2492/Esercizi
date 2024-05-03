@@ -54,7 +54,7 @@ namespace Chattero.Services
                 {
                     Utente temp = new Utente()
                     {
-                        CodiceUtente = obj.CodUte,
+                        CodiceUtente = Guid.NewGuid().ToString().ToUpper(),
                         Username = obj.Use,
                         Passw = CalculateMD5Hash(obj.Pas),
                         IsDeleted = null

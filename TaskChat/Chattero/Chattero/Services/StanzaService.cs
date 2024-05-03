@@ -51,6 +51,25 @@ namespace Chattero.Services
         {
             return _repo.GetCode(nome);
         }
+        public StanzaDTO? RitornaDto(string nome)
+        {
+            Stanza? stanza = _repo.GetCode(nome);
+            if( stanza is not null)
+            {
+                StanzaDTO temp = new StanzaDTO()
+                {
+                    NomSta = stanza.NomeStanza,
+                    Desc = stanza.Descrizione,
+                    Cre = stanza.Creatore,
+                    Datcre = stanza.DataCreazione,
+                    LisMsg = stanza.ListaMessaggi,
+                    LisUte = stanza.ListaUtente
+                    
+                };
+                return temp;
+            }
+            return new StanzaDTO();      
+        }
         public Stanza? GetByObjectId(ObjectId id)
         {
             return _repo.GetByObjectId(id);
@@ -65,9 +84,10 @@ namespace Chattero.Services
             else
                 return false;
         }
-        public StanzaDTO? RestuisciStanza(StanzaDTO objdto)
+        public StanzaDTO? RestuisciStanza(StanzaDTO nome)
         {
-            Stanza? imp = _repo.GetCode(objdto.NomSta);
+            
+            Stanza? imp = _repo.GetCode(nome.NomSta);
             if (imp is not null)
             {
                 return new StanzaDTO()
@@ -111,10 +131,15 @@ namespace Chattero.Services
             }
             return false;
         }
-        public bool EliminaStanza(StanzaDTO objDto)
+        public bool EliminaStanza(string nome)
         {
-            if(objDto.NomSta is not null)
-                return _repo.Delete(objDto.NomSta);
+            Stanza? temp = GetByNome(nome);
+            if (nome is not null && temp is not null)
+            {
+                
+                return _repo.DeleteStanza(temp);
+            }
+                
             return false;
         }
         public bool ModificaStanza(StanzaDTO objdto)
@@ -127,23 +152,31 @@ namespace Chattero.Services
         }
         public List<ObjectId> RecuperaTuttiMsgPerStanza(StanzaDTO s)
         {
-            return s.LisMsg;
+            StanzaDTO? temp = RestuisciStanza(s);
+            if(temp is not null)
+                return temp.LisMsg;
+            return new List<ObjectId> { ObjectId.Empty };
         }
-        public bool InserisciMessaggio(StanzaDTO stanza, MessaggioDTO mex)
+
+        public bool InserisciMessaggio(string stanza, MessaggioDTO mex)
         {
-            Stanza? temp = _repo.GetCode(stanza.NomSta);
-            Messaggio? mesgtemp = _serviceMsg.GetCodeModel(mex);
+            Stanza? temp = _repo.GetCode(stanza);
+            Messaggio? mesgtemp = new Messaggio()
+            {
+                NomeUtente = mex.NomUte,
+                Contenuto = mex.Con,
+                Orario = mex.Ora
+            };
             if(temp is not null && mesgtemp is not null)
             {
-                temp.ListaMessaggi.Add(mesgtemp.MessaggioID);
-                _repo.Update(temp);
-                return _serviceMsg.Inserimento(new MessaggioDTO()
+                if(_serviceMsg.Inserimento(mesgtemp))
                 {
-                    NomUte = mex.NomUte,
-                    Sta = temp.StanzaID,
-                    Con = mex.Con,
-                    Ora = DateTime.Now
-                });
+                    if (_repo.InserisciMessagio(temp,mesgtemp))
+                    {
+                        return true;
+                    }
+                }
+                
             }
             return false;
         }

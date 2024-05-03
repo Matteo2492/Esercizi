@@ -2,11 +2,9 @@
 
 namespace Chattero.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class MessaggioController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }

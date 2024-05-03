@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Chattero.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class StanzaController : Controller
     {
         private readonly StanzaService _service;
@@ -33,7 +35,8 @@ namespace Chattero.Controllers
             if (_service.AggiungiPartecipante(dto, ute))
                 return Ok(new Risposta()
                 {
-                    Status = "SUCCESS"
+                    Status = "SUCCESS",
+                    Data = $"Inserimento avvenuto, nuovo partecipante -->{ute}"
                 });
             else
                 return Ok(new Risposta()
@@ -41,8 +44,8 @@ namespace Chattero.Controllers
                     Status = "ERRROR"
                 });
         }
-        [HttpPost]
-        public IActionResult InserisciMessaggio(StanzaDTO stanza, MessaggioDTO mex)
+        [HttpPost("aggiungi_messaggio/{stanza}")]
+        public IActionResult InserisciMessaggio(string stanza, MessaggioDTO mex)
         {
             if (_service.InserisciMessaggio(stanza, mex))
                 return Ok();
@@ -53,32 +56,32 @@ namespace Chattero.Controllers
                 });
         }
 
-        [HttpGet("{stanza}")]
-        public IActionResult RecuperaPerStanza(StanzaDTO stanza)
+        [HttpGet("stanza/{stanza}")]
+        public IActionResult RecuperaPerStanza(string stanza)
         {
             return Ok(new Risposta()
             {
                 Status = "SUCCESS",
-                Data = _service.RecuperaTuttiMsgPerStanza(stanza)
+                Data = _service.RecuperaTuttiMsgPerStanza(new StanzaDTO() { NomSta = stanza })
             });
         }
-        [HttpGet("dettaglio/{codice}")]
-        public IActionResult DettaglioGruppo(StanzaDTO sta)
+        [HttpGet("dettaglio_stanza/{sta}")]
+        public IActionResult DettaglioStanza(string sta)
         {
             return Ok(new Risposta()
             {
                 Status = "SUCCESS",
-                Data = _service.RestuisciStanza(sta)
+                Data = _service.RitornaDto(sta)
             });
         }
 
-        [HttpDelete("{codice}")]
-        public IActionResult EliminaStanza(StanzaDTO sta)
+        [HttpDelete("elimina_stanza/{sta}")]
+        public IActionResult EliminaStanza(string sta)
         {
             return Ok(_service.EliminaStanza(sta));
         }
 
-        [HttpGet]
+        [HttpGet("lista_stanze")]
         public IActionResult GetAll()
         {
             return Ok(new Risposta()
