@@ -1,0 +1,65 @@
+<h1>Registrati</h1>
+<div class="row col-md-12 text-start">
+  <div class="form-group">
+    <label for="input-name">Nominativo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="input-name"
+      [(ngModel)]="name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="input-user">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      id="input-user"
+      [(ngModel)]="user"
+    />
+  </div>
+  <div class="form-group">
+    <label for="input-pass">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="input-pass"
+      [(ngModel)]="pass"
+    />
+  </div>
+</div>
+<button type="button" class="mt-4 btn btn-primary" (click)="inserimento()">
+  Register
+</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nome Ristorante</th>
+      <th>Descrizione</th>
+      <th>Orario Apertura</th>
+      <th>Orario Chiusura</th>
+      <th>Tipo di Cucina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of elenco">
+      <td>{{ item.nom }}</td>
+      <td>{{ item.des }}</td>
+      <td>{{ item.oraApe }}</td>
+      <td>{{ item.oraChi }}</td>
+      <td>{{ item.tipCuc }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-primary"
+          
+          *ngFor="let menu of item.men"
+          (click)="menu.cod && item.nom && mostraMenu(menu.cod, item.nom)"
+        >
+          {{ menu.cod }}
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
