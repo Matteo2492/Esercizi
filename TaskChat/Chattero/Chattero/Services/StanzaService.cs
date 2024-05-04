@@ -47,6 +47,21 @@ namespace Chattero.Services
             return false;
 
         }
+        public bool RimuoviParatecipantne(string room, string u)
+        {
+            Stanza? rom = _repo.GetCode(room);
+            Utente? ute = _serviceUte.GetCodeModel(_serviceUte.PerEmail(u));
+
+            if (rom is not null && ute is not null)
+            {
+                if (rom.ListaUtente.Contains(ute.Username))
+                    return _repo.Rimuovi(rom, ute);
+                return false;                 
+            }
+
+            return false;
+
+        }
         public Stanza? GetByNome(string nome)
         {
             return _repo.GetCode(nome);
@@ -70,21 +85,6 @@ namespace Chattero.Services
             }
             return new StanzaDTO();      
         }
-        public Stanza? GetByObjectId(ObjectId id)
-        {
-            return _repo.GetByObjectId(id);
-        }
-        public bool UtenteContenuto(string room, string u)
-        {
-            Stanza? r = this.GetByNome(room);
-            Utente? ute = _serviceUte.GetCodeModel(_serviceUte.PerEmail(u));
-
-            if (r is not null && ute is not null && r.ListaUtente.Contains(ute.Username))
-                return true;
-            else
-                return false;
-        }
-
         public StanzaDTO? RestuisciStanza(StanzaDTO nome)
         {
             
@@ -103,12 +103,12 @@ namespace Chattero.Services
             }
             return null;
         }
-        public bool ModificaRoom(StanzaDTO dto)
+        public bool ModificaStanza(StanzaDTO objdto)
         {
             return _repo.Update(new Stanza()
             {
-                NomeStanza = dto.NomSta,
-                ListaMessaggi = dto.LisMsg
+                NomeStanza = objdto.NomSta,
+                Descrizione = objdto.Desc
             });
         }
         public List<StanzaDTO> GetAll()
@@ -156,14 +156,26 @@ namespace Chattero.Services
             }
             return new List<StanzaDTO>();
         }
-        public bool AssegnaCreatore(StanzaDTO dto)
+        public List<StanzaDTO>? NonAppartiene(string username)
         {
-            if (dto is not null && dto.Cre is not null)
+            List<Stanza> rooms = _repo.GetAll();
+
+            List<StanzaDTO> dtos = new List<StanzaDTO>();
+
+            foreach (Stanza r in rooms)
             {
-                dto.LisUte.Add(dto.Cre);
-                return this.ModificaRoom(dto);
+                if (!r.ListaUtente.Contains(username))
+                    dtos.Add(new StanzaDTO()
+                    {
+                        NomSta = r.NomeStanza,
+                        Cre = r.Creatore,
+                        Datcre = r.DataCreazione,
+                        Desc = r.Descrizione,
+                        LisMsg = r.ListaMessaggi,
+                        LisUte = r.ListaUtente
+                    });
             }
-            return false;
+            return dtos;
         }
         public bool EliminaSta(string nome)
         {
@@ -176,14 +188,7 @@ namespace Chattero.Services
                 
             return false;
         }
-        public bool ModificaStanza(StanzaDTO objdto)
-        {
-            return _repo.Update(new Stanza()
-            {
-                NomeStanza = objdto.NomSta,
-                Descrizione = objdto.Desc
-            });
-        }
+       
         public List<MessaggioDTO> RecuperaTuttiMsgPerStanza(string s)
         {
             Stanza? temp = GetByNome(s);

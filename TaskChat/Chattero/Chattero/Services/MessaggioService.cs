@@ -17,21 +17,6 @@ namespace Chattero.Services
         {
             return _repo.Insert(imp);
         }
-     
-        public List<MessaggioDTO> RestituisciTutti()
-        {
-            List<MessaggioDTO> lista = new List<MessaggioDTO>();
-            foreach (Messaggio imp in _repo.GetAll())
-            {
-                lista.Add(new MessaggioDTO()
-                {
-                    NomUte = imp.NomeUtente,
-                    Con = imp.Contenuto,
-                    Ora = imp.Orario
-                });
-            }
-            return lista;
-        }
         public List<MessaggioDTO> RestituisciTuttiPerStanza(Stanza sta)
         {
             List<MessaggioDTO> lista = new List<MessaggioDTO>();
@@ -45,19 +30,6 @@ namespace Chattero.Services
                 });
             }
             return lista;
-        }
-        public MessaggioDTO ConvertiMsgDTO(Messaggio temp)
-        {
-            return new MessaggioDTO()
-            {
-                NomUte = temp.NomeUtente,
-                Con = temp.Contenuto,
-                Ora = temp.Orario
-            };
-        }
-        public Messaggio? GetCodeModel(MessaggioDTO obj)
-        {
-            return _repo.PrendiDaDatabase(obj);
         }
         public bool EliminaMessaggio(MessaggioDTO objDto)
         {

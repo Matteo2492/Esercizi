@@ -68,10 +68,10 @@ namespace Chattero.Repo
             Stanza? temp = GetCode(item.NomeStanza);
             if (temp is not null)
             {
-                temp.NomeStanza = item.NomeStanza != null ? item.NomeStanza : temp.NomeStanza;
-                temp.Descrizione = item.Descrizione != null ? item.Descrizione : temp.Descrizione;
-                temp.IsDeleted = item.IsDeleted != null ? item.IsDeleted : temp.IsDeleted;
-                temp.ListaMessaggi = item.ListaMessaggi != null ? item.ListaMessaggi : temp.ListaMessaggi;
+                temp.NomeStanza = item.NomeStanza ?? temp.NomeStanza;
+                temp.Descrizione = item.Descrizione ?? temp.Descrizione;
+                temp.IsDeleted = item.IsDeleted ?? temp.IsDeleted;
+                temp.ListaMessaggi = item.ListaMessaggi ?? temp.ListaMessaggi;
                 foreach (string p in item.ListaUtente)
                 {
                     if (!temp.ListaUtente.Contains(p))
@@ -81,15 +81,53 @@ namespace Chattero.Repo
                 try
                 {
                     stanza.ReplaceOne(filter, temp);
+                    return true; // Indicate success
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex.Message);
+                    return false;
                 }
-
             }
             return false;
         }
+        public bool UpdateRimuovi(Stanza item, Utente t)
+        {
+            Stanza? temp = GetCode(item.NomeStanza);
+
+            if (temp is not null)
+            {
+                if (temp.ListaUtente.Contains(t.Username))
+                {
+                    temp.ListaUtente.Remove(t.Username);
+
+                    var filter = Builders<Stanza>.Filter.Eq(i => i.StanzaID, temp.StanzaID);
+
+                    try
+                    {
+                        var update = Builders<Stanza>.Update.Set(i => i.ListaUtente, temp.ListaUtente);
+                        stanza.UpdateOne(filter, update);
+
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex.Message);
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                // Room not found
+                return false;
+            }
+        }
+
         public bool AggiungiPartecipante(Stanza r, Utente t)
         {
             try
@@ -109,7 +147,25 @@ namespace Chattero.Repo
                 return false;
             }
         }
-        
+        public bool Rimuovi(Stanza r, Utente t)
+        {
+            try
+            {
+                Stanza? temp = this.GetCode(r.NomeStanza);
+                if (temp is not null)
+                {
+                    temp.ListaUtente.Remove(t.Username);
+                    this.UpdateRimuovi(temp,t);
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
         public Stanza? GetCode(string? nome)
         {
             try

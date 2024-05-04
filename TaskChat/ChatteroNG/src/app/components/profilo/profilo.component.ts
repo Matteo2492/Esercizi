@@ -13,11 +13,9 @@ import { StanzaService } from '../../services/stanza.service';
 export class ProfiloComponent {
   listaStanzeCreate: Stanza[] | undefined;
   listaStanzeP: Stanza[] | undefined;
+  listaStanzeNuove: Stanza[] | undefined;
   nomeUte: string | undefined;
   handleInterval: any;
-  datcre: Date | undefined;
-  formattedDatcre: string | undefined;
-  
   nomesta : string | undefined;
   descsta : string | undefined;
   stanza: Stanza | undefined;
@@ -39,10 +37,28 @@ export class ProfiloComponent {
       this.stanzaService.recuperaStanzeP(this.nomeUte).subscribe((risultato) => {
         this.listaStanzeP = <Stanza[]>risultato.data;
       });
+      this.stanzaService.recuperaStanzeNuove(this.nomeUte).subscribe((risultato) => {
+        this.listaStanzeNuove = <Stanza[]>risultato.data;
+      });
     }
   }
   enterChat(roomName: string): void {
+    if(this.nomeUte){
+      this.stanzaService.aggiungiUtente(roomName,this.nomeUte).subscribe((risultato) => {
+        if (risultato.status == 'SUCCESS') alert(risultato.data);
+        else alert('ERRORE');
+      });
+    } 
     this.router.navigateByUrl(`/chat/${roomName}`);
+   
+  }
+  exitChat(roomName: string): void {
+    if(this.nomeUte){
+      this.stanzaService.rimuoviUtente(roomName,this.nomeUte).subscribe((risultato) => {
+        if (risultato.status == 'SUCCESS') alert(risultato.data);
+        else alert('ERRORE');
+      });
+    } 
   }
   creaStanza():void{
     this.stanza = new Stanza();
@@ -63,6 +79,9 @@ export class ProfiloComponent {
     });
   }
   ngOnInit(): void {
+    if(localStorage.getItem("email")){
+      this.stanzaService.creaGlobal();
+    }
     const email = localStorage.getItem("email");
     this.nomeUte = email !== null ? email : undefined;
     this.serviceProfilo.recuperaProfilo().subscribe((risultato) => {

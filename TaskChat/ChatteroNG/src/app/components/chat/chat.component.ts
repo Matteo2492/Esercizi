@@ -14,7 +14,7 @@ export class ChatComponent {
   messaggi: Messaggio[] = new Array();
   nomeChat: string | undefined;
   messaggioInput: string | undefined;
-
+  handleInterval: any;
   constructor(
     private rottaAttiva: ActivatedRoute,
     private router: Router,
@@ -40,14 +40,18 @@ export class ChatComponent {
       this.nomeChat = parametro['roomName'];
     });
 
-    this.stampaMessaggi(<string>this.nomeChat);
+    this.handleInterval = setInterval(() => {
+      this.stampaMessaggi(<string>this.nomeChat);
+    },500);
   }
 
   inviaMessaggioComponent(): void {
     this.messaggioService.invio(<string>this.messaggioInput,<string>this.nomeUte,<string>this.nomeChat).subscribe((risultato) => {
         console.log(risultato.status);
       });
-      
-    location.replace('/chat/' + this.nomeChat);
+  }
+  ngOnDestroy(): void {
+
+    clearInterval(this.handleInterval); 
   }
 }

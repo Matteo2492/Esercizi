@@ -29,14 +29,29 @@ namespace Chattero.Controllers
             return BadRequest();
         }
 
-        [HttpPost("aggiungi_partecipante")]
+        [HttpPost("aggiungipartecipante/{dto}/{ute}")]
         public IActionResult AggiungiPartecipante(string dto, string ute)
         {
             if (_service.AggiungiPartecipante(dto, ute))
                 return Ok(new Risposta()
                 {
                     Status = "SUCCESS",
-                    Data = $"Inserimento avvenuto, nuovo partecipante -->{ute}"
+                    Data = $"Inserimento avvenuto, nuovo partecipante --> {ute}"
+                });
+            else
+                return Ok(new Risposta()
+                {
+                    Status = "ERRROR"
+                });
+        }
+        [HttpPut("rimuovipartecipante/{dto}/{ute}")]
+        public IActionResult RimuoviPartecipante(string dto, string ute)
+        {
+            if (_service.RimuoviParatecipantne(dto, ute))
+                return Ok(new Risposta()
+                {
+                    Status = "SUCCESS",
+                    Data = $"Rimozione avvenuta, addio --> {ute}"
                 });
             else
                 return Ok(new Risposta()
@@ -58,7 +73,7 @@ namespace Chattero.Controllers
                     Status = "ERROR"
                 });
         }
-        [HttpGet("create/{nome}")]
+        [HttpGet("create_da/{nome}")]
         public IActionResult RecuperaPerStanzaPerUtente(string nome)
         {
             return Ok(new Risposta()
@@ -67,13 +82,22 @@ namespace Chattero.Controllers
                 Data = _service.GetAllByCreatore(nome)
             });
         }
-        [HttpGet("partecipi/{nome}")]
+        [HttpGet("stanze_di/{nome}")]
         public IActionResult RecuperaPerStanzaP(string nome)
         {
             return Ok(new Risposta()
             {
                 Status = "SUCCESS",
                 Data = _service.GetAllP(nome)
+            });
+        }
+        [HttpGet("stanze_nuove/{nome}")]
+        public IActionResult RecuperaPerStanzeNuove(string nome)
+        {
+            return Ok(new Risposta()
+            {
+                Status = "SUCCESS",
+                Data = _service.NonAppartiene(nome)
             });
         }
         [HttpGet("messaggi/{stanza}")]
@@ -122,11 +146,21 @@ namespace Chattero.Controllers
         [HttpGet("global")]
         public IActionResult CreaGlobal()
         {
-            _service.CreaGlobal();
-            return Ok(new Risposta()
+            if (_service.CreaGlobal())
             {
-                Status = "SUCCESS"
-            });
+                return Ok(new Risposta()
+                {
+                    Status = "SUCCESS"
+                });
+            }
+            else
+            {
+                return Ok(new Risposta()
+                {
+                    Status = "ERROR",
+                    Data = "Stanza gia creata"
+                });
+            }
         }
     }
 }

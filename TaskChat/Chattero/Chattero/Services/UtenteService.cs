@@ -30,16 +30,7 @@ namespace Chattero.Services
 
             return elenco;
         }
-        public UtenteDTO ConvertiUtenteDTO(Utente temp)
-        {
-            return new UtenteDTO()
-            {
-                CodUte = temp.CodiceUtente,
-                Use = temp.Passw,
-                Pas = temp.Username,
-                IsDel = temp.IsDeleted
-            };
-        }
+
         public bool LoginUtente(UtenteDTO obj)
         {
             obj.Pas = CalculateMD5Hash(obj.Pas);
@@ -100,7 +91,6 @@ namespace Chattero.Services
 
             return false;
         }
-
         public bool AggiornaUtente(UtenteDTO obj)
         {
             if (obj is not null)

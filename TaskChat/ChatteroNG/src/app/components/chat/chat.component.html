@@ -6,46 +6,41 @@
     </div>
     <div class="col-9">
       <h2>
-        <a class="btn"
-          ><h3>{{ nomeChat }}</h3></a
-        >
+        <a class="btn"><h3>{{ nomeChat }}</h3></a>
       </h2>
     </div>
   </div>
 
 
-<hr/>
+  <hr/>
 
-<div *ngFor="let item of messaggi">
-  <div
-    class="container"
-    *ngIf="nomeUte == item.nomUte; else altro"
-  >
-    <div class="row">
-      <div class="col-8"></div>
-      <div class="col-4" style="border: 0.5px solid black">
-        <p>
-          <b>{{ item.nomUte }}</b>
-        </p>
-        <p>{{ item.con }}</p>
-        <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+  <div *ngFor="let item of messaggi">
+    <div class="container"*ngIf="nomeUte == item.nomUte; else altro">
+      <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <p>
+            <b>{{ item.nomUte }}</b>
+          </p>
+          <p>{{ item.con }}</p>
+          <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+        </div>
       </div>
     </div>
+
+    <ng-template #altro>
+      <div class="row">
+        <div class="col-4">
+          <p>
+            <b>{{ item.nomUte }}</b>
+          </p>
+          <p>{{ item.con }}</p>
+          <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+        </div>
+        <div class="col-8"></div>
+      </div>
+    </ng-template>
   </div>
-
-  <ng-template #altro>
-    <div class="row">
-      <div class="col-4" style="border: 0.5px solid black">
-        <p>
-          <b>{{ item.nomUte }}</b>
-        </p>
-        <p>{{ item.con }}</p>
-        <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
-      </div>
-      <div class="col-8"></div>
-    </div>
-  </ng-template>
-</div>
 <hr style="background-color: #fafafa" />
 <div
   class="container"
