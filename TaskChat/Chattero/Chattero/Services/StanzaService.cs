@@ -84,6 +84,7 @@ namespace Chattero.Services
             else
                 return false;
         }
+
         public StanzaDTO? RestuisciStanza(StanzaDTO nome)
         {
             
@@ -122,6 +123,39 @@ namespace Chattero.Services
                 LisUte = r.ListaUtente
             }).ToList();
         }
+        public List<StanzaDTO> GetAllByCreatore(string nome)
+        {
+            if(nome is not null)
+            {
+                return _repo.GetAllUte(nome).Select(r => new StanzaDTO()
+                {
+                    NomSta = r.NomeStanza,
+                    Desc = r.Descrizione,
+                    Datcre = r.DataCreazione,
+                    Cre = r.Creatore,
+                    LisMsg = r.ListaMessaggi,
+                    LisUte = r.ListaUtente,
+                    IsDel = r.IsDeleted
+                }).ToList();
+            }
+            return new List<StanzaDTO>();
+        }
+        public List<StanzaDTO> GetAllP(string nome)
+        {
+            if (nome is not null)
+            {
+                return _repo.GetAllP(nome).Select(r => new StanzaDTO()
+                {
+                    NomSta = r.NomeStanza,
+                    Desc = r.Descrizione,
+                    Datcre = r.DataCreazione,
+                    Cre = r.Creatore,
+                    LisMsg = r.ListaMessaggi,
+                    LisUte = r.ListaUtente
+                }).ToList();
+            }
+            return new List<StanzaDTO>();
+        }
         public bool AssegnaCreatore(StanzaDTO dto)
         {
             if (dto is not null && dto.Cre is not null)
@@ -131,10 +165,10 @@ namespace Chattero.Services
             }
             return false;
         }
-        public bool EliminaStanza(string nome)
+        public bool EliminaSta(string nome)
         {
             Stanza? temp = GetByNome(nome);
-            if (nome is not null && temp is not null)
+            if (temp is not null && temp.IsDeleted == null)
             {
                 
                 return _repo.DeleteStanza(temp);
@@ -150,34 +184,39 @@ namespace Chattero.Services
                 Descrizione = objdto.Desc
             });
         }
-        public List<ObjectId> RecuperaTuttiMsgPerStanza(StanzaDTO s)
+        public List<MessaggioDTO> RecuperaTuttiMsgPerStanza(string s)
         {
-            StanzaDTO? temp = RestuisciStanza(s);
-            if(temp is not null)
-                return temp.LisMsg;
-            return new List<ObjectId> { ObjectId.Empty };
+            Stanza? temp = GetByNome(s);
+            if(temp is not null && temp.ListaMessaggi is not null)
+                return _serviceMsg.RestituisciTuttiPerStanza(temp);
+            return new List<MessaggioDTO>();
         }
 
-        public bool InserisciMessaggio(string stanza, MessaggioDTO mex)
+        public bool InserisciMessaggio(MessaggioDTO mex)
         {
-            Stanza? temp = _repo.GetCode(stanza);
-            Messaggio? mesgtemp = new Messaggio()
+            Stanza? temp = _repo.GetCode(mex.Sta);
+            if(temp is not null)
             {
-                NomeUtente = mex.NomUte,
-                Contenuto = mex.Con,
-                Orario = mex.Ora
-            };
-            if(temp is not null && mesgtemp is not null)
-            {
-                if(_serviceMsg.Inserimento(mesgtemp))
+                Messaggio? mesgtemp = new Messaggio()
                 {
-                    if (_repo.InserisciMessagio(temp,mesgtemp))
+                    NomeUtente = mex.NomUte,
+                    Contenuto = mex.Con,
+                    Orario = mex.Ora,
+                    Stanza = temp.StanzaID
+                };
+                if (temp is not null && mesgtemp is not null)
+                {
+                    if (_serviceMsg.Inserimento(mesgtemp))
                     {
-                        return true;
+                        if (_repo.InserisciMessagio(temp, mesgtemp))
+                        {
+                            return true;
+                        }
                     }
                 }
-                
             }
+           
+            
             return false;
         }
         public bool CreaGlobal()

@@ -50,10 +50,10 @@ export class RegisterComponent {
     })
   }
   ngOnInit(): void {
-    // this.handleInterval = setInterval(() => {
-    //   //Associo l'handle dell'interval alla variabile (per il successivo clearinterval)
-    //   this.stampa();
-    // }, 1000);
+    this.handleInterval = setInterval(() => {
+      //Associo l'handle dell'interval alla variabile (per il successivo clearinterval)
+      this.stampa();
+    }, 1000);
     this.stampa();
     console.log(this.elenco);
   }

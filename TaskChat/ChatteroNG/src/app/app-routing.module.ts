@@ -4,6 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'register', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'profilo', component: ProfiloComponent },
   { path: 'logout', component: LogoutComponent },
+  { path: 'chat/:roomName', component: ChatComponent } 
 ];
 
 @NgModule({

@@ -44,25 +44,45 @@ namespace Chattero.Controllers
                     Status = "ERRROR"
                 });
         }
-        [HttpPost("aggiungi_messaggio/{stanza}")]
-        public IActionResult InserisciMessaggio(string stanza, MessaggioDTO mex)
+        [HttpPost("aggiungi_messaggio/")]
+        public IActionResult InserisciMessaggio(MessaggioDTO mex)
         {
-            if (_service.InserisciMessaggio(stanza, mex))
-                return Ok();
+            if (_service.InserisciMessaggio(mex))
+                return Ok(new Risposta()
+                {
+                    Status = "OK"
+                });
             else
                 return Ok(new Risposta()
                 {
                     Status = "ERROR"
                 });
         }
-
-        [HttpGet("stanza/{stanza}")]
+        [HttpGet("create/{nome}")]
+        public IActionResult RecuperaPerStanzaPerUtente(string nome)
+        {
+            return Ok(new Risposta()
+            {
+                Status = "SUCCESS",
+                Data = _service.GetAllByCreatore(nome)
+            });
+        }
+        [HttpGet("partecipi/{nome}")]
+        public IActionResult RecuperaPerStanzaP(string nome)
+        {
+            return Ok(new Risposta()
+            {
+                Status = "SUCCESS",
+                Data = _service.GetAllP(nome)
+            });
+        }
+        [HttpGet("messaggi/{stanza}")]
         public IActionResult RecuperaPerStanza(string stanza)
         {
             return Ok(new Risposta()
             {
                 Status = "SUCCESS",
-                Data = _service.RecuperaTuttiMsgPerStanza(new StanzaDTO() { NomSta = stanza })
+                Data = _service.RecuperaTuttiMsgPerStanza(stanza )
             });
         }
         [HttpGet("dettaglio_stanza/{sta}")]
@@ -78,7 +98,15 @@ namespace Chattero.Controllers
         [HttpDelete("elimina_stanza/{sta}")]
         public IActionResult EliminaStanza(string sta)
         {
-            return Ok(_service.EliminaStanza(sta));
+            if (_service.EliminaSta(sta))
+            {
+                return Ok(new Risposta()
+                {
+                    Status = "SUCCESS",
+                    Data = "Eliminazione avvenuta"
+                });
+            }
+            return BadRequest();
         }
 
         [HttpGet("lista_stanze")]

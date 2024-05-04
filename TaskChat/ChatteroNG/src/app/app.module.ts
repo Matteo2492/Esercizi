@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegisterComponent } from './components/register/register.component';
     LoginComponent,
     LogoutComponent,
     ProfiloComponent,
-    RegisterComponent
+    RegisterComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

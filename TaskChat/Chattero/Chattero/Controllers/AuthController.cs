@@ -15,10 +15,12 @@ namespace Chattero.Controllers
     public class AuthController : Controller
     {
         private readonly UtenteService _serviceutenti;
+        private readonly StanzaService _servicestanza;
 
-        public AuthController(UtenteService service)
+        public AuthController(UtenteService service,StanzaService sta)
         {
             _serviceutenti = service;
+            _servicestanza = sta;
         }
 
 

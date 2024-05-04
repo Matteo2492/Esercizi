@@ -39,7 +39,14 @@ namespace Chattero.Repo
         {
             return stanza.Find(p => true && p.IsDeleted == null).ToList();
         }
-
+        public List<Stanza> GetAllUte(string nome)
+        {
+            return stanza.Find(p=> true && p.Creatore == nome).ToList();
+        }
+        public List<Stanza> GetAllP(string nome)
+        {
+            return GetAll().FindAll(p => p.ListaUtente.Contains(nome));
+        }
         public bool Insert(Stanza item)
         {
 
@@ -55,6 +62,7 @@ namespace Chattero.Repo
             }
             return false;
         }
+
         public bool Update(Stanza item)
         {
             Stanza? temp = GetCode(item.NomeStanza);

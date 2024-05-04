@@ -15,10 +15,10 @@ namespace Chattero.DTO
         [StringLength(250)]
         public string? Desc { get; set; }
 
-        [BsonElement("listmsg")]
+
         public List<ObjectId> LisMsg = new List<ObjectId>();
 
-        [BsonElement("listute")]
+ 
         public List<string> LisUte = new List<string>();
 
         [Required]

@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="col-3">
+      <button class="btn" style="text-align: left" (click)="backToProfilo()">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="col-9">
+      <h2>
+        <a class="btn"
+          ><h3>{{ nomeChat }}</h3></a
+        >
+      </h2>
+    </div>
+  </div>
+
+
+<hr/>
+
+<div *ngFor="let item of messaggi">
+  <div
+    class="container"
+    *ngIf="nomeUte == item.nomUte; else altro"
+  >
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4" style="border: 0.5px solid black">
+        <p>
+          <b>{{ item.nomUte }}</b>
+        </p>
+        <p>{{ item.con }}</p>
+        <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #altro>
+    <div class="row">
+      <div class="col-4" style="border: 0.5px solid black">
+        <p>
+          <b>{{ item.nomUte }}</b>
+        </p>
+        <p>{{ item.con }}</p>
+        <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+      </div>
+      <div class="col-8"></div>
+    </div>
+  </ng-template>
+</div>
+<hr style="background-color: #fafafa" />
+<div
+  class="container"
+  style="
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fafafa;
+  "
+>
+  <div class="row">
+    <div class="col-11">
+      <input
+        class="form-control"
+        placeholder="Inserisci un messaggio"
+        [(ngModel)]="messaggioInput"
+      />
+    </div>
+    <div class="col-1" style="text-align: center">
+      <button class="btn" (click)="inviaMessaggioComponent()">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>

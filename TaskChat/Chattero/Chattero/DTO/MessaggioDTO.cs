@@ -11,7 +11,7 @@ namespace Chattero.DTO
         [StringLength(500)]
         public string? Con { get; set; }
 
-        public ObjectId? Sta { get; set; }
+        public string? Sta { get; set; }
 
         public DateTime Ora { get; set; } = DateTime.Now;
     }

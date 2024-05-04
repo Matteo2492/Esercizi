@@ -27,7 +27,20 @@ namespace Chattero.Services
                 {
                     NomUte = imp.NomeUtente,
                     Con = imp.Contenuto,
-                    Sta = imp.Stanza,
+                    Ora = imp.Orario
+                });
+            }
+            return lista;
+        }
+        public List<MessaggioDTO> RestituisciTuttiPerStanza(Stanza sta)
+        {
+            List<MessaggioDTO> lista = new List<MessaggioDTO>();
+            foreach (Messaggio imp in _repo.GetAllByRoom(sta))
+            {
+                lista.Add(new MessaggioDTO()
+                {
+                    NomUte = imp.NomeUtente,
+                    Con = imp.Contenuto,
                     Ora = imp.Orario
                 });
             }
@@ -39,7 +52,6 @@ namespace Chattero.Services
             {
                 NomUte = temp.NomeUtente,
                 Con = temp.Contenuto,
-                Sta = temp.Stanza,
                 Ora = temp.Orario
             };
         }

@@ -1,1 +1,125 @@
-<h1>Benvenuto {{ datiUtente }}!!</h1>
+<div class="row">
+  <h3>Ciao {{ nomeUte }}</h3>
+  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modaleInserimento">Crea</button>
+  <p>Ecco la lista delle stanze da te create:</p>
+  <table class="table table-striped m-4">
+      <thead>
+        <tr>
+          <th>Nome Stanza</th>
+          <th>Descrizione</th>
+          <th>Creatore</th>
+          <th>Data Creazione</th>
+          <th>Eliminata?</th>
+          <th>Partecipa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listaStanzeCreate">
+          <td>{{ item.nomSta }}</td>
+          <td>{{ item.desc }}</td>
+          <td>{{ item.cre }}</td>
+          <td>{{ item.datcre }}</td>
+          <td>{{ item.isDel }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="item.nomSta && enterChat(item.nomSta)">Entra</button>
+            <button class="btn btn-secondary">Esci</button>
+            <button class="btn btn-danger" (click)="item.nomSta && eliminaStanza(item.nomSta)">Elimina</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Ecco la lista delle stanze a cui partecipi:</p>
+    <table class="table table-striped m-4">
+        <thead>
+          <tr>
+            <th>Nome Stanza</th>
+            <th>Descrizione</th>
+            <th>Creatore</th>
+            <th>Data Creazione</th>
+            <th>Partecipa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of listaStanzeP">
+            <td>{{ item.nomSta }}</td>
+            <td>{{ item.desc }}</td>
+            <td>{{ item.cre }}</td>
+            <td>{{ item.datcre }}</td>
+            <td>
+              <button class="btn btn-primary" (click)="item.nomSta && enterChat(item.nomSta)">Entra</button>
+              <button class="btn btn-secondary">Esci</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+         <!-- Modal Inserimento-->
+      <div
+      class="modal fade"
+      id="modaleInserimento"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Crea stanza
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <h3 class="text-center">
+                  Let's go
+                </h3>
+                <div class="form-group">
+                  <label for="input-codice">Nome della stanza</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-nomesta"
+                    placeholder="Una valle di lacrime"
+                    [(ngModel)]="nomesta"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="input-codice">Descrizione</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-descsta"
+                    placeholder="E che te lo dico a fà..."
+                    [(ngModel)]="descsta" 
+                  />
+                </div>
+                <button
+                  class="btn btn-outline-primary btn-block"
+                  (click)="creaStanza()"
+                >
+                  Salva
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

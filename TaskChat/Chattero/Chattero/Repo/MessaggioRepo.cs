@@ -33,14 +33,13 @@ namespace Chattero.Repo
                 return false;
             }
         }
-
-        public List<Messaggio> GetAll()
-        {
-            return messaggio.Find(p => true).ToList();
-        }
         public List<Messaggio> GetAllByRoom(Stanza t)
         {
             return messaggio.Find(p => true && p.Stanza == t.StanzaID).ToList();
+        }
+        public List<Messaggio> GetAll()
+        {
+            return messaggio.Find(p => true).ToList();
         }
         public bool Insert(Messaggio item)
         {
@@ -57,7 +56,6 @@ namespace Chattero.Repo
             }
             return false;
         }
- 
         public Messaggio PrendiDaDatabase(MessaggioDTO msg)
         {
             return messaggio.Find(p=> true && p.NomeUtente == msg.NomUte && p.Orario == msg.Ora).Single();
