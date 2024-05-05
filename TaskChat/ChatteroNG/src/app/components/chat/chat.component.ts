@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Messaggio } from '../../models/messaggio';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ChatService } from '../../services/chat.service';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-chat',
@@ -9,13 +10,15 @@ import { ChatService } from '../../services/chat.service';
   styleUrl: './chat.component.css'
 })
 export class ChatComponent {
-
+  @ViewChild('scrollTarget')
+  scrollTarget!: ElementRef;
   nomeUte:string |undefined;
   messaggi: Messaggio[] = new Array();
   nomeChat: string | undefined;
   messaggioInput: string | undefined;
   handleInterval: any;
   constructor(
+    private el: ElementRef,
     private rottaAttiva: ActivatedRoute,
     private router: Router,
     private service: ChatService,
@@ -29,7 +32,6 @@ export class ChatComponent {
   stampaMessaggi(nomeChat: string): void {
     this.service.stampaMessaggi(nomeChat).subscribe((risultato) => {
       this.messaggi = risultato.data;
-      console.log(risultato.data)
     });
   }
 
@@ -39,19 +41,32 @@ export class ChatComponent {
     this.rottaAttiva.params.subscribe((parametro) => {
       this.nomeChat = parametro['roomName'];
     });
-
+    
     this.handleInterval = setInterval(() => {
       this.stampaMessaggi(<string>this.nomeChat);
     },500);
+    setTimeout(() => {
+      this.scrollToBottom();
+    },600);
   }
 
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  scrollToBottom() {
+    this.scrollTarget.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+  }
+  
   inviaMessaggioComponent(): void {
-    this.messaggioService.invio(<string>this.messaggioInput,<string>this.nomeUte,<string>this.nomeChat).subscribe((risultato) => {
-        console.log(risultato.status);
+    this.messaggioService.invio(<string>this.messaggioInput, <string>this.nomeUte, <string>this.nomeChat)
+      .subscribe((risultato) => {
+        this.messaggioInput = "";
       });
+      setTimeout(() => {
+        this.scrollToBottom();
+      },600);
   }
   ngOnDestroy(): void {
-
     clearInterval(this.handleInterval); 
   }
 }

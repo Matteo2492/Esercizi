@@ -1,69 +1,52 @@
-<div class="row">
-    <div class="col-3">
-      <button class="btn" style="text-align: left" (click)="backToProfilo()">
+  <div class="row" style="position: sticky; top: 0; z-index: 1;">
+    <div class="col-12 p-3">
+      <button class="btn btn-light" (click)="backToProfilo()">
         <i class="fa fa-arrow-left" aria-hidden="true"></i>
       </button>
-    </div>
-    <div class="col-9">
-      <h2>
-        <a class="btn"><h3>{{ nomeChat }}</h3></a>
-      </h2>
+      <button class="mx-3 btn btn-outline-success" (click)="scrollToTop()">{{ nomeChat }}</button>
     </div>
   </div>
 
-
-  <hr/>
-
   <div *ngFor="let item of messaggi">
-    <div class="container"*ngIf="nomeUte == item.nomUte; else altro">
+    <div class="row"*ngIf="nomeUte == item.nomUte; else altro">
       <div class="row">
         <div class="col-8"></div>
-        <div class="col-4">
-          <p>
-            <b>{{ item.nomUte }}</b>
-          </p>
+        <div class="col-4 mt-2  bg-dark p-3 rounded-3">
+          <p><b>{{ item.nomUte?.toUpperCase() }}</b></p>
           <p>{{ item.con }}</p>
-          <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+          <p style="color: rgb(255, 255, 255); font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>
         </div>
       </div>
     </div>
 
     <ng-template #altro>
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 mt-2 bg-secondary-subtle text-secondary-emphasis p-3 rounded-3">
           <p>
-            <b>{{ item.nomUte }}</b>
+            <b>{{ item.nomUte?.toUpperCase() }}</b>
           </p>
           <p>{{ item.con }}</p>
-          <p style="color: darkgray; font-size: 10px">{{ item.ora }}</p>
+          <p style="font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>
         </div>
         <div class="col-8"></div>
       </div>
     </ng-template>
   </div>
-<hr style="background-color: #fafafa" />
-<div
-  class="container"
-  style="
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #fafafa;
-  "
->
+<div class="container p-3" style="position: sticky; bottom: 0;">
   <div class="row">
     <div class="col-11">
       <input
         class="form-control"
         placeholder="Inserisci un messaggio"
+        id="messaggio"
         [(ngModel)]="messaggioInput"
       />
     </div>
     <div class="col-1" style="text-align: center">
-      <button class="btn" (click)="inviaMessaggioComponent()">
+      <button class="btn btn-success" (click)="inviaMessaggioComponent()">
         <i class="fa fa-paper-plane" aria-hidden="true"></i>
       </button>
     </div>
   </div>
 </div>
+<div #scrollTarget></div>

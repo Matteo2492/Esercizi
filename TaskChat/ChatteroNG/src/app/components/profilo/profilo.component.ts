@@ -4,7 +4,7 @@ import { ProfiloService } from '../../services/profilo.service';
 import { UtenteService } from '../../services/utente.service';
 import { Stanza } from '../../models/stanza';
 import { StanzaService } from '../../services/stanza.service';
-
+import { formatDate } from '@angular/common';
 @Component({
   selector: 'app-profilo',
   templateUrl: './profilo.component.html',
@@ -50,7 +50,9 @@ export class ProfiloComponent {
       });
     } 
     this.router.navigateByUrl(`/chat/${roomName}`);
-   
+  }
+  partecipa(roomName: string):void{
+    this.router.navigateByUrl(`/chat/${roomName}`);
   }
   exitChat(roomName: string): void {
     if(this.nomeUte){

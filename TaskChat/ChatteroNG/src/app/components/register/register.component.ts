@@ -25,28 +25,6 @@ export class RegisterComponent {
     private router: Router
   ) {}
 
-  // stampa(): void {
-  //   this.serviceRistorante.recuperaRistoranti().subscribe((risultato) => {
-  //     this.elenco = <Ristorante[]>risultato.data;
-  //     console.log(this.elenco);
-  //   });
-  // }
-  // mostraMenu(codiceRistorante: string, ristoranteNom:string): void {
-  //   this.serviceRistorante.recuperaPiatti(codiceRistorante).subscribe((risultato)=>{
-  //     this.elencoPiatti = <Piatto[]>risultato.data;
-  //     let nom: string | undefined;
-  //     let des: string | undefined;
-  //     let pre: number | undefined;
-  //     let qua: number | undefined;
-  //     this.elencoPiatti.forEach(element => {
-  //       nom = element.nom;
-  //       des = element.des;
-  //       pre = element.pre;
-  //       qua = element.qua;
-  //     });
-  //     alert(`MENU del ristorante ${ristoranteNom}\nNome piatto: ${nom}\n${des}\nPrezzo: ${pre}\nQuantita: ${qua}\n`);
-  //   })
-  // }
   ngOnInit(): void {
     // this.handleInterval = setInterval(() => {
     //   //Associo l'handle dell'interval alla variabile (per il successivo clearinterval)
@@ -59,6 +37,15 @@ export class RegisterComponent {
   ngOnDestroy(): void {
     // console.log("Distrutto Lista Component")
     // clearInterval(this.handleInterval); //Eliminazione dell'interval tramite il suo handle
+  }
+  sordi():void{
+    alert("VENDETTA VERA NON FINIRO' IN GALERA!")
+  }
+  login():void{
+    this.router.navigateByUrl(`/login`);
+  }
+  clicca():void{
+    alert("Pew Pew. Sei morto.")
   }
   inserimento(): void {
     let utente = new Utente();

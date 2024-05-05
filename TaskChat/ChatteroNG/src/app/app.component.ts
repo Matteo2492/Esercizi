@@ -12,9 +12,11 @@ export class AppComponent {
   isLoggato: boolean = false;
 
   constructor(private router: Router) {
-    if (localStorage.getItem('ilToken')) this.isLoggato = true;
-  }
-
+    if (localStorage.getItem('ilToken')) {
+        this.isLoggato = true;
+        this.router.navigate(['/profilo']); // Reindirizza alla rotta "profilo"
+    }
+  } 
   logout() {
     localStorage.removeItem('ilToken');
     this.isLoggato = false;

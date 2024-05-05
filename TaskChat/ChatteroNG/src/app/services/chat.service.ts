@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { EMPTY, Observable } from 'rxjs';
 import { Risposta } from '../models/risposta';
 import { Messaggio } from '../models/messaggio';
 
@@ -23,11 +23,15 @@ export class ChatService {
   }
 
   invio(contenuto: string,mittente: string,stanza: string): Observable<Risposta> {
+    if (!contenuto.trim()) {
+      return EMPTY; // Restituisci un'Observable vuota
+    }
     let m: Messaggio = new Messaggio();
     m.nomUte = mittente;
     m.sta = stanza;
     m.con = contenuto;
 
+    
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');
 

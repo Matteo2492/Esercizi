@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark">
     <a class="navbar-brand" href="/">Chattero</a>
     <button
       class="navbar-toggler"
@@ -14,12 +14,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isLoggato">
           <a class="nav-link" routerLinkActive="true" routerLink="/register"
             >Register</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isLoggato">
           <a class="nav-link" routerLinkActive="true" routerLink="/login"
             >Login</a
           >
@@ -39,9 +39,11 @@
   </nav>
 </header>
 <main>
-  <div class="container text-center">
-    <h1>Benvenuto in Chattero!!</h1>  
-    <p>La tua dose giornaliera di vita sociale...</p>
+  <div class="container text-center text-light py-4">
+    <header class="mb-5">
+      <h1>Benvenuto in Chattero!</h1>  
+      <h5>La tua dose giornaliera di vita sociale...</h5>
+    </header>
     <router-outlet></router-outlet>
   </div>
 </main>
