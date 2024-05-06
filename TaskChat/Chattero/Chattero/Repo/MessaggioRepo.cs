@@ -24,7 +24,7 @@ namespace Chattero.Repo
         {
             try
             {
-                this.messaggio.DeleteOne(i => i.MessaggioID == item.MessaggioID);
+                this.messaggio.DeleteOne(i => i.NomeUtente == item.NomeUtente && i.Orario == item.Orario);
                 return true;
             }
             catch (Exception ex)

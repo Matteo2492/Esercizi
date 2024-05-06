@@ -17,6 +17,9 @@ export class LoginComponent {
   register():void{
     this.router.navigateByUrl(`/register`);
   }
+  clicca():void{
+    alert("Trojan INCOMING!!!")
+  }
   verifica(): void {
     this.obj.use = this.user;
     this.obj.pas = this.pass;

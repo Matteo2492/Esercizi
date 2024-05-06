@@ -2,15 +2,13 @@
     /* Gradient 1 */
     background: #1e3c72; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1e3c72, #2a5298); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1e3c72, #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
     }
     h3{
         color: #1e3c72;
     }
-    @media (min-width: 768px) {
-    .gradient-form {
-    height: 100vh !important;
-    }
+    .sfumata{
+        box-shadow: #1e3c72 20px 5px 5px 10px; 
     }
     @media (min-width: 769px) {
     .gradient-custom-2 {

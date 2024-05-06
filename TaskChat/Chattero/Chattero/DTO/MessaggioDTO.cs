@@ -13,6 +13,6 @@ namespace Chattero.DTO
 
         public string? Sta { get; set; }
 
-        public DateTime Ora { get; set; } = DateTime.Now;
+        public DateTime Ora { get; set; } 
     }
 }

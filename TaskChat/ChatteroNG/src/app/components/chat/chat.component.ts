@@ -31,7 +31,6 @@ export class ChatComponent {
   backToProfilo(): void {
     this.router.navigateByUrl('/profilo');
   }
-
   stampaMessaggi(nomeChat: string): void {
     this.service.stampaMessaggi(nomeChat).subscribe((risultato) => {
       this.messaggi = risultato.data;

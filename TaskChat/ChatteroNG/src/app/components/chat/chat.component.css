@@ -5,10 +5,10 @@ h2{
     font-size: 1.4rem;
 }
 .chat-container {
-    max-height: 60vh; /* Altezza massima della chat */
+    max-height: 65vh; /* Altezza massima della chat */
     overflow-y: auto; /* Abilita lo scrolling verticale se il contenuto supera l'altezza massima */
     overflow-x: hidden; /* Abilita lo scrolling verticale se il contenuto supera l'altezza massima */             
     scrollbar-color:  #282e38 #345997; 
     background-color: #4b74b9;
-    border-radius: 10px;
+    border-radius: 15px;
 }

@@ -21,7 +21,13 @@ export class ChatService {
       'https://localhost:7260/Stanza/messaggi/' + nomeChat
     );
   }
-
+  eliminaMsg(msg: Messaggio): Observable<Risposta> {
+    let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
+    const url = `https://localhost:7260/Messaggio/elimina_messaggio`;
+    return this.http.post<Risposta>(url, msg, {
+      headers: headerCustom,
+    });
+  }
   invio(contenuto: string,mittente: string,stanza: string): Observable<Risposta> {
     if (!contenuto.trim()) {
       return EMPTY; // Restituisci un'Observable vuota
