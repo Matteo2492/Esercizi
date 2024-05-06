@@ -14,12 +14,6 @@ export class LoginComponent {
   pass: string = '';
   constructor(private service: AuthService, private router: Router) {}
 
-  rip():void{
-    alert("Ca**i tua")
-  }
-  sordi():void{
-    alert("VENDETTA VERA NON FINIRO' IN GALERA!")
-  }
   register():void{
     this.router.navigateByUrl(`/register`);
   }

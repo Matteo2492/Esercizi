@@ -38,9 +38,6 @@ export class RegisterComponent {
     // console.log("Distrutto Lista Component")
     // clearInterval(this.handleInterval); //Eliminazione dell'interval tramite il suo handle
   }
-  sordi():void{
-    alert("VENDETTA VERA NON FINIRO' IN GALERA!")
-  }
   login():void{
     this.router.navigateByUrl(`/login`);
   }

@@ -31,6 +31,14 @@ export class StanzaService {
       headers: headerCustom,
     });
   }
+  dettaglioStanza(sta:string): Observable<Risposta> {
+    let headerCustom = new HttpHeaders();
+    headerCustom.set('Content-Type', 'application/json');
+
+    return this.http.get<Risposta>(this.base_url +'dettaglio_stanza/' + sta, {
+      headers: headerCustom,
+    });
+  }
   aggiungiUtente(stanza:string,utente:string): Observable<Risposta>{
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');

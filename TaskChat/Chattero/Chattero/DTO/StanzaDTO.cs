@@ -15,11 +15,9 @@ namespace Chattero.DTO
         [StringLength(250)]
         public string? Desc { get; set; }
 
-
         public List<ObjectId> LisMsg = new List<ObjectId>();
 
- 
-        public List<string> LisUte = new List<string>();
+        public List<string> LisUte { get; set; } = new List<string>() ;
 
         [Required]
         [StringLength(250)]
