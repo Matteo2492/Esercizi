@@ -4,15 +4,10 @@
     background: -webkit-linear-gradient(to right, #1e3c72, #2a5298); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1e3c72, #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
     }
-    h3{
-        color: #1e3c72;
-    }
-    .sfumata{
-        box-shadow: #1e3c72 20px 5px 5px 10px; 
-    }
-    @media (min-width: 769px) {
-    .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    }
-    }
+h3{
+    color: #1e3c72;
+}
+.sfumata{
+    box-shadow: #1e3c72 30px 1px 10px 10px; 
+    border-radius: 10px;
+}

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Utente } from '../../models/utente';
 import { AuthService } from '../../services/auth.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -23,16 +24,38 @@ export class LoginComponent {
   verifica(): void {
     this.obj.use = this.user;
     this.obj.pas = this.pass;
-    if(this.obj.use == "" ||this.obj.pas == "" ){
+  
+    // Controllo se i campi sono vuoti
+    if (this.obj.use == "" || this.obj.pas == "") {
       alert("Inserisci tutti i campi");
       return;
     }
+  
+    Swal.fire({
+      title: 'Verifica in corso',
+      text: 'Attendere prego...',
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    });
+  
+    // Chiamata al servizio per il login
     this.service.login(this.obj).subscribe((risultato) => {
+      // Dopo aver ricevuto la risposta dal servizio
       if (risultato.token) {
+        // Se il login ha successo, salva il token e l'email nell'localStorage e reindirizza alla pagina del profilo
         localStorage.setItem('ilToken', risultato.token);
         localStorage.setItem('email', this.user);
-        this.router.navigateByUrl('/profilo');
+        Swal.fire('Accesso effettuato!', '', 'success').then(() => {
+          this.router.navigateByUrl('/profilo');
+        });
+      } else {
+        // Se il login non ha successo, mostra un messaggio di errore
+        Swal.fire('Errore!', 'Credenziali non valide.', 'error');
       }
     });
   }
+  
+  
 }

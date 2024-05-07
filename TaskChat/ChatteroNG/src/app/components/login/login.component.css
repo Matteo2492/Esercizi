@@ -8,11 +8,7 @@
         color: #1e3c72;
     }
     .sfumata{
-        box-shadow: #1e3c72 20px 5px 5px 10px; 
+        box-shadow: #1e3c72 30px 1px 10px 10px; 
+        border-radius: 10px;
     }
-    @media (min-width: 769px) {
-    .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    }
-    }
+   

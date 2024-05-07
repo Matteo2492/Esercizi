@@ -21,10 +21,10 @@ export class ChatService {
       'https://localhost:7260/Stanza/messaggi/' + nomeChat
     );
   }
-  eliminaMsg(msg: Messaggio): Observable<Risposta> {
+  eliminaMsg(nome:string,ora:Date): Observable<Risposta> {
     let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
-    const url = `https://localhost:7260/Messaggio/elimina_messaggio`;
-    return this.http.post<Risposta>(url, msg, {
+    const url = `https://localhost:7260/Messaggio/elimina_messaggio/`+nome+"/"+ora;
+    return this.http.delete<Risposta>(url, {
       headers: headerCustom,
     });
   }

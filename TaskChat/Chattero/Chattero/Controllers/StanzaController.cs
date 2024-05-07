@@ -39,7 +39,7 @@ namespace Chattero.Controllers
                     Data = $"Inserimento avvenuto, nuovo partecipante --> {ute}"
                 });
             else
-                return Ok(new Risposta()
+                return BadRequest(new Risposta()
                 {
                     Status = "ERRROR"
                 });
@@ -68,7 +68,7 @@ namespace Chattero.Controllers
                     Status = "OK"
                 });
             else
-                return Ok(new Risposta()
+                return BadRequest(new Risposta()
                 {
                     Status = "ERROR"
                 });

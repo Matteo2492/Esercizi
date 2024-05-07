@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProfiloService } from '../../services/profilo.service';
-import { UtenteService } from '../../services/utente.service';
 import { Stanza } from '../../models/stanza';
 import { StanzaService } from '../../services/stanza.service';
-import { formatDate } from '@angular/common';
+import { ChatService } from '../../services/chat.service';
+import Swal from 'sweetalert2'
 @Component({
   selector: 'app-profilo',
   templateUrl: './profilo.component.html',
@@ -19,11 +19,10 @@ export class ProfiloComponent {
   nomesta : string | undefined;
   descsta : string | undefined;
   stanza: Stanza | undefined;
-  
   constructor(
     private router: Router,
     private serviceProfilo: ProfiloService,
-    private serviceUtente: UtenteService,
+    private serviceMsg: ChatService,
     private stanzaService: StanzaService
   ) {
     if (!localStorage.getItem('ilToken')) router.navigateByUrl('/login');
@@ -43,25 +42,74 @@ export class ProfiloComponent {
     }
   }
   enterChat(roomName: string): void {
-    if(this.nomeUte){
-      this.stanzaService.aggiungiUtente(roomName,this.nomeUte).subscribe((risultato) => {
-        if (risultato.status == 'SUCCESS') alert(risultato.data);
-        else alert('ERRORE');
+    if (this.nomeUte) {
+      Swal.fire({
+        title: roomName,
+        text: `Vuoi entrare nella chat?`,
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Sì',
+        denyButtonText: 'No',
+        customClass: {
+          actions: 'my-actions',
+          cancelButton: 'order-1 right-gap',
+          confirmButton: 'order-2',
+          denyButton: 'order-3',
+        },
+      }).then((result) => {
+        if (result.isConfirmed && this.nomeUte) {
+          this.stanzaService.aggiungiUtente(roomName, this.nomeUte).subscribe((risultato) => {
+            if (risultato.status == 'SUCCESS') {
+              Swal.fire('Benvenuto nella chat!', '', 'success').then(() => {
+                this.router.navigateByUrl(`/chat/${roomName}`);
+              });
+            } else {
+              Swal.fire('Errore!', 'Impossibile entrare nella chat.', 'error');
+            }
+          });
+        } else if (result.isDenied) {
+          Swal.fire('Entrata annullata', '', 'info');
+        }
       });
-    } 
-    this.router.navigateByUrl(`/chat/${roomName}`);
+    }
   }
   partecipa(roomName: string):void{
     this.router.navigateByUrl(`/chat/${roomName}`);
   }
   exitChat(roomName: string): void {
-    if(this.nomeUte){
-      this.stanzaService.rimuoviUtente(roomName,this.nomeUte).subscribe((risultato) => {
-        if (risultato.status == 'SUCCESS') alert(risultato.data);
-        else alert('ERRORE');
+    if (this.nomeUte) {
+      Swal.fire({
+        title: roomName,
+        text: `Vuoi uscire dalla chat?`,
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Sì',
+        denyButtonText: 'No',
+        customClass: {
+          actions: 'my-actions',
+          cancelButton: 'order-1 right-gap',
+          confirmButton: 'order-2',
+          denyButton: 'order-3',
+        },
+      }).then((result) => {
+        if (result.isConfirmed && this.nomeUte) {
+          this.stanzaService.rimuoviUtente(roomName, this.nomeUte).subscribe((risultato) => {
+            if (risultato.status == 'SUCCESS') {
+              // Se la rimozione dell'utente ha successo, mostra un messaggio di successo
+              Swal.fire('Hai lasciato la chat!', '', 'success');
+            } else {
+              // Se c'è un errore nella rimozione dell'utente, mostra un messaggio di errore
+              Swal.fire('Errore!', 'Impossibile uscire dalla chat.', 'error');
+            }
+          });
+        } else if (result.isDenied) {
+          // Se l'utente rifiuta di uscire dalla chat, mostra un messaggio informativo
+          Swal.fire('Uscita annullata', '', 'info');
+        }
       });
-    } 
+    }
   }
+  
   creaStanza():void{
     this.stanza = new Stanza();
     if (this.stanza && this.nomeUte) {
@@ -70,16 +118,38 @@ export class ProfiloComponent {
       this.stanza.cre = this.nomeUte;
     }
     this.stanzaService.creaStanza(this.stanza).subscribe((risultato) => {
-      if (risultato.status == 'SUCCESS') alert(risultato.data);
+      if (risultato.status == 'SUCCESS') console.log(risultato.data);
       else alert('ERRORE');
     });
   }
-  eliminaStanza(nomesta:string):void{
-    this.stanzaService.eliminaStanza(nomesta).subscribe((risultato) => {
-      if (risultato.status == 'SUCCESS') alert(risultato.data);
-      else alert('ERRORE');
+  eliminaStanza(nomesta: string): void {
+    Swal.fire({
+      title: 'Sicuro di voler eliminare la stanza?',
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Yes',
+      denyButtonText: 'No',
+      customClass: {
+        actions: 'my-actions',
+        cancelButton: 'order-1 right-gap',
+        confirmButton: 'order-2',
+        denyButton: 'order-3',
+      },
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.stanzaService.eliminaStanza(nomesta).subscribe((risultato) => {
+          if (risultato.status == 'SUCCESS') {
+            Swal.fire('Stanza eliminata!', '', 'success');
+          } else {
+            Swal.fire('Errore!', 'Impossibile eliminare la stanza.', 'error');
+          }
+        });
+      } else if (result.isDenied) {
+        Swal.fire('Eliminazione annullata', '', 'info');
+      }
     });
   }
+
   ngOnInit(): void {
     if(localStorage.getItem("email")){
       this.stanzaService.creaGlobal();
@@ -98,4 +168,6 @@ export class ProfiloComponent {
 
     clearInterval(this.handleInterval); 
   }
+
+  
 }

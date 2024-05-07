@@ -8,21 +8,18 @@
       <div class="col-xl-10">
         <div class="card rounded-3 text-black">
           <div class="row sfumata">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="min-height: 700px;">
               <div class="card-body p-md-5">
                 <div class="text-center">
                   <img class="mb-1 pb-2 " src="./assets/Logo.png"
-                    style="width: 185px;" alt="logo">
+                    style="width: 200px; height: 200px;" alt="logo">
                 </div>
-                <form>
-                  <div data-mdb-input-init  class="form-outline mb-4 border">
-                    <input type="text" id="input-user" class="form-control" [(ngModel)]="user" name="user"/>             
-                    <label class="form-label">Username</label>
+                <form class="form-group">
+                  <div data-mdb-input-init  class="mb-4">
+                    <input placeholder="Username" type="text" id="input-user" class="form-control" [(ngModel)]="user" name="user"/>             
                   </div>
-                  <div data-mdb-input-init class="form-outline mb-4 border">
-                      
-                      <input type="password" id="input-pass" class="form-control" [(ngModel)]="pass" name="pass"/>     
-                      <label class="form-label">Password</label>
+                  <div data-mdb-input-init class="mb-4">
+                      <input placeholder="Password" type="password" id="input-pass" class="form-control" [(ngModel)]="pass" name="pass"/>     
                   </div>
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" (click)="inserimento()">Submit</button>

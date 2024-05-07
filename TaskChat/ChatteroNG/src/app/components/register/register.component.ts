@@ -5,6 +5,7 @@ import { StanzaService } from '../../services/stanza.service';
 import { Router } from '@angular/router';
 import { Messaggio } from '../../models/messaggio';
 import { Stanza } from '../../models/stanza';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -48,13 +49,28 @@ export class RegisterComponent {
     let utente = new Utente();
     utente.use = this.user;
     utente.pas = this.pass;
-    if (utente.use != '' && utente.pas != '') {
+    if (utente.use !== '' && utente.pas !== '') {
       this.service.register(utente).subscribe((risultato) => {
-        if (risultato.status == 'SUCCESS') alert(risultato.data);
-        else alert('ERRORE');
+        if (risultato.status === 'SUCCESS') {
+          Swal.fire({
+            icon: 'success',
+            title: 'Registrazione avvenuta con successo!',
+            text: risultato.data
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Errore',
+            text: 'Si è verificato un errore durante la registrazione.'
+          });
+        }
       });
     } else {
-      alert('Inserisci tutti i campi');
+      Swal.fire({
+        icon: 'warning',
+        title: 'Attenzione!',
+        text: 'Inserisci tutti i campi.'
+      });
     }
   }
 }

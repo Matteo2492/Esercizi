@@ -1,45 +1,60 @@
-<div class="row mt-5 text-center">
+<div class="row my-4 text-center">
   <h2>{{ nomeChat?.toUpperCase() }}</h2> 
   <p>Descrizione: {{ stanza.desc }}</p> 
 </div>
-  <div class="row pb-3" style="position: sticky; top: 0; z-index: 1;">
-      <div class="dropdown justify-content-center align-items-center d-flex">
-        <div>
-          <button class="btn btn-light btn-sm" (click)="backToProfilo()">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+<div class="row pb-3">
+  <div class="col-4 d-flex align-items-center">
+      <button class="btn btn-light btn-sm me-2" (click)="backToProfilo()">
+          <i class="bi bi-arrow-left"></i> Indietro
+      </button>
+      <div class="dropdown">
+          <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Partecipanti
           </button>
-        </div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Partecipanti
-        </button>    
-        <ul class="dropdown-menu text-center">
-          
-          <li class="dropdown-item">Partecipanti: </li>
-          <li><hr class="dropdown-divider"></li>
-          <li class="dropdown-item" *ngFor="let partecipante of stanza.lisUte">{{ partecipante }}</li>
-          <li><hr class="dropdown-divider"></li>
-        </ul>  
+          <ul class="dropdown-menu text-center">
+              <li class="dropdown-item font-weight-bold">Partecipanti:</li>
+              <hr class="dropdown-divider">
+              <li class="dropdown-item my-1" *ngFor="let partecipante of stanza.lisUte">
+                {{ partecipante }}
+                <span *ngIf="nomeUte === stanza.cre">
+                  <button class="btn btn-outline-danger btn-sm ml-2" (click)="rimuovi(partecipante)">Rimuovi</button>
+                </span>     
+              </li>
+          </ul>
+      </div>
+  </div> 
+  <div class="col-8" *ngIf="nomeUte === stanza.cre">
+      <div class="d-flex align-items-center">
+          <input #inputNuovoMembro type="text" class="form-control me-2" placeholder="Nuovo membro">
+          <button class="btn btn-dark btn-sm" type="button" (click)="aggiungiMembro(inputNuovoMembro.value)">Aggiungi</button>
       </div>
   </div>
+</div>
+
 <div id="chat-container" class="row chat-container p-3">
   <div *ngFor="let item of messaggi">
-    <div class="row"*ngIf="nomeUte == item.nomUte; else altro">
-        <div class="col-5"></div>
-        <div class="col-7 mt-2  bg-dark rounded-3">
-          <p><b>{{ item.nomUte?.toUpperCase() }}</b></p>
-          <p>{{ item.con }}</p>
-          <p style="color: rgb(255, 255, 255); font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>
+    <div class="row mt-5 "*ngIf="nomeUte == item.nomUte; else altro">
+        <div class="col-4"></div>
+        <div class="col-1 d-flex align-items-end justify-content-end p-0">
+          <button type="button" class="btn btn-danger cambio" (click)="item.ora && eliminaMsg(item.nomUte, item.ora)">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
         </div>
+        <div class="col-7 bg-dark rounded-3">
+          <p class="text-right"><b>{{ item.nomUte?.toUpperCase() }}</b></p>
+          <p>{{ item.con }}</p>
+         
+          <p class="text-left" style="color: rgb(255, 255, 255); font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>  
+        </div>
+        
     </div>
 
     <ng-template #altro>
-      <div class="row">
-        <div class="col-7 mt-2 bg-secondary-subtle text-secondary-emphasis rounded-3">
-          <p>
-            <b>{{ item.nomUte?.toUpperCase() }}</b>
-          </p>
+      <div class="row mt-5">
+        <div class="col-7 bg-secondary-subtle text-secondary-emphasis rounded-3">
+          <p class="text-left"><b>{{ item.nomUte?.toUpperCase() }}</b></p>
           <p>{{ item.con }}</p>
-          <p style="font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>
+          <p class="text-right" style="font-size: 10px">{{item.ora | date: 'HH:ss'}}</p>    
         </div>
         <div class="col-5"></div>
       </div>

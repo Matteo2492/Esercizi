@@ -2,6 +2,7 @@
 using Chattero.Services;
 using Chattero.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Chattero.Controllers
 {
@@ -14,15 +15,19 @@ namespace Chattero.Controllers
         {
             _serviceMsg = serviceMsg;
         }
-        [HttpPost("elimina_messaggio")]
-        public IActionResult EliminaStanza(MessaggioDTO msg)
+        [HttpDelete("elimina_messaggio/{nome}/{ora}")]
+        public IActionResult EliminaStanza(string nome, DateTime ora)
         {
-            if (_serviceMsg.EliminaMessaggio(msg))
+            MessaggioDTO temp = new MessaggioDTO()
+            {
+                NomUte = nome,
+                Ora = ora
+            };
+            if (_serviceMsg.EliminaMessaggio(temp))
             {
                 return Ok(new Risposta()
                 {
                     Status = "SUCCESS",
-                    Data = "Eliminazione avvenuta"
                 });
             }
             return BadRequest();
