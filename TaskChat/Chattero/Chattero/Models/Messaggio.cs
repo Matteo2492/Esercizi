@@ -14,6 +14,6 @@ namespace Chattero.Models
         [BsonElement("stan")]
         public ObjectId? Stanza { get; set; }
         [BsonElement("ora")]
-        public DateTime Orario { get; set; } = DateTime.Now;
+        public DateTime Orario { get; set; }
     }
 }

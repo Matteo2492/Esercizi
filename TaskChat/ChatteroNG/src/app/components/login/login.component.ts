@@ -54,8 +54,12 @@ export class LoginComponent {
         // Se il login non ha successo, mostra un messaggio di errore
         Swal.fire('Errore!', 'Credenziali non valide.', 'error');
       }
+    }, (error) => {
+      // In caso di errore nella chiamata al servizio
+      Swal.fire('Errore!', 'Credenziali non valide.', 'error');
     });
   }
+
   
   
 }

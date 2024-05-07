@@ -26,19 +26,6 @@ export class RegisterComponent {
     private router: Router
   ) {}
 
-  ngOnInit(): void {
-    // this.handleInterval = setInterval(() => {
-    //   //Associo l'handle dell'interval alla variabile (per il successivo clearinterval)
-    //   this.stampa();
-    // }, 1000);
-    // this.stampa();
-    // console.log(this.elenco);
-  }
-
-  ngOnDestroy(): void {
-    // console.log("Distrutto Lista Component")
-    // clearInterval(this.handleInterval); //Eliminazione dell'interval tramite il suo handle
-  }
   login():void{
     this.router.navigateByUrl(`/login`);
   }
@@ -61,9 +48,15 @@ export class RegisterComponent {
           Swal.fire({
             icon: 'error',
             title: 'Errore',
-            text: 'Si è verificato un errore durante la registrazione.'
+            text: 'Si è verificato un errore durante la registrazione: ' + risultato.data
           });
         }
+      }, (error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Errore',
+          text: 'Si è verificato un errore durante la registrazione.'
+        });
       });
     } else {
       Swal.fire({

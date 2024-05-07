@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\stanzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\stanzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\messaggiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\messaggiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\dto\\messaggiodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\dto\\messaggiodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\models\\messaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\models\\messaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\repo\\stanzarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\repo\\stanzarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\utils\\risposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\utils\\risposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\dto\\messaggiodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\dto\\messaggiodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\stanzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\stanzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\services\\messaggioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\repo\\messaggiorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\repo\\messaggiorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\models\\messaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\models\\messaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\services\\utenteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +63,8 @@
       "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\models\\stanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\repo\\stanzarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\repo\\stanzarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|c:\\users\\bs00000000\\documents\\github\\esercizi\\taskchat\\chattero\\chattero\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C4A986-12A8-48B7-81F3-33FF36FD2C69}|Chattero\\Chattero.csproj|solutionrelative:chattero\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BS00000000\\AppData\\Local\\SourceServer\\49363d749637645f0b6c9f6c3d6c669caa290d99eb785e47afda8d1561ed5243\\TaskChat\\Chattero\\Chattero\\Controllers\\StanzaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -104,98 +104,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 116,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MessaggioController.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\MessaggioController.cs",
-              "RelativeDocumentMoniker": "Chattero\\Controllers\\MessaggioController.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\MessaggioController.cs",
-              "RelativeToolTip": "Chattero\\Controllers\\MessaggioController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAB0AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:01:12.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Stanza.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Stanza.cs",
-              "RelativeDocumentMoniker": "Chattero\\Models\\Stanza.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Stanza.cs",
-              "RelativeToolTip": "Chattero\\Models\\Stanza.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T14:58:37.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UtenteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\UtenteDTO.cs",
-              "RelativeDocumentMoniker": "Chattero\\DTO\\UtenteDTO.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\UtenteDTO.cs",
-              "RelativeToolTip": "Chattero\\DTO\\UtenteDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:01:22.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MessaggioService.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\MessaggioService.cs",
-              "RelativeDocumentMoniker": "Chattero\\Services\\MessaggioService.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\MessaggioService.cs",
-              "RelativeToolTip": "Chattero\\Services\\MessaggioService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA6wCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:00:44.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MessaggioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\MessaggioDTO.cs",
-              "RelativeDocumentMoniker": "Chattero\\DTO\\MessaggioDTO.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\MessaggioDTO.cs",
-              "RelativeToolTip": "Chattero\\DTO\\MessaggioDTO.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAMwA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:01:31.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MessaggioRepo.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\MessaggioRepo.cs",
-              "RelativeDocumentMoniker": "Chattero\\Repo\\MessaggioRepo.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\MessaggioRepo.cs",
-              "RelativeToolTip": "Chattero\\Repo\\MessaggioRepo.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwCQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:00:36.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Messaggio.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Messaggio.cs",
-              "RelativeDocumentMoniker": "Chattero\\Models\\Messaggio.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Messaggio.cs",
-              "RelativeToolTip": "Chattero\\Models\\Messaggio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:00:27.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "StanzaService.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\StanzaService.cs",
               "RelativeDocumentMoniker": "Chattero\\Services\\StanzaService.cs",
@@ -207,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "StanzaController.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\StanzaController.cs",
               "RelativeDocumentMoniker": "Chattero\\Controllers\\StanzaController.cs",
@@ -220,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "StanzaDTO.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\StanzaDTO.cs",
               "RelativeDocumentMoniker": "Chattero\\DTO\\StanzaDTO.cs",
@@ -232,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Risposta.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Utils\\Risposta.cs",
               "RelativeDocumentMoniker": "Chattero\\Utils\\Risposta.cs",
@@ -245,7 +158,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Chattero\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Chattero\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:21:12.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UtenteController.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\UtenteController.cs",
+              "RelativeDocumentMoniker": "Chattero\\Controllers\\UtenteController.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\UtenteController.cs",
+              "RelativeToolTip": "Chattero\\Controllers\\UtenteController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:01:01.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UtenteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\UtenteDTO.cs",
+              "RelativeDocumentMoniker": "Chattero\\DTO\\UtenteDTO.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\UtenteDTO.cs",
+              "RelativeToolTip": "Chattero\\DTO\\UtenteDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:01:22.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessaggioController.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\MessaggioController.cs",
+              "RelativeDocumentMoniker": "Chattero\\Controllers\\MessaggioController.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\MessaggioController.cs",
+              "RelativeToolTip": "Chattero\\Controllers\\MessaggioController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:01:12.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StanzaRepo.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\StanzaRepo.cs",
+              "RelativeDocumentMoniker": "Chattero\\Repo\\StanzaRepo.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\StanzaRepo.cs",
+              "RelativeToolTip": "Chattero\\Repo\\StanzaRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:58:43.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessaggioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\MessaggioDTO.cs",
+              "RelativeDocumentMoniker": "Chattero\\DTO\\MessaggioDTO.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\DTO\\MessaggioDTO.cs",
+              "RelativeToolTip": "Chattero\\DTO\\MessaggioDTO.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAMwBAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:01:31.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Messaggio.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Messaggio.cs",
+              "RelativeDocumentMoniker": "Chattero\\Models\\Messaggio.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Messaggio.cs",
+              "RelativeToolTip": "Chattero\\Models\\Messaggio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:00:27.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MessaggioRepo.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\MessaggioRepo.cs",
+              "RelativeDocumentMoniker": "Chattero\\Repo\\MessaggioRepo.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\MessaggioRepo.cs",
+              "RelativeToolTip": "Chattero\\Repo\\MessaggioRepo.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:00:36.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MessaggioService.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\MessaggioService.cs",
+              "RelativeDocumentMoniker": "Chattero\\Services\\MessaggioService.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\MessaggioService.cs",
+              "RelativeToolTip": "Chattero\\Services\\MessaggioService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA6wCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:00:44.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Stanza.cs",
+              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Stanza.cs",
+              "RelativeDocumentMoniker": "Chattero\\Models\\Stanza.cs",
+              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Models\\Stanza.cs",
+              "RelativeToolTip": "Chattero\\Models\\Stanza.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:58:37.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UtenteService.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Services\\UtenteService.cs",
               "RelativeDocumentMoniker": "Chattero\\Services\\UtenteService.cs",
@@ -257,31 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UtenteController.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\UtenteController.cs",
-              "RelativeDocumentMoniker": "Chattero\\Controllers\\UtenteController.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\UtenteController.cs",
-              "RelativeToolTip": "Chattero\\Controllers\\UtenteController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwC0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:01:01.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StanzaRepo.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\StanzaRepo.cs",
-              "RelativeDocumentMoniker": "Chattero\\Repo\\StanzaRepo.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Repo\\StanzaRepo.cs",
-              "RelativeToolTip": "Chattero\\Repo\\StanzaRepo.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAADgv1QAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T14:58:43.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Program.cs",
               "RelativeDocumentMoniker": "Chattero\\Program.cs",
@@ -290,18 +305,6 @@
               "ViewState": "AQIAACgAAAAAAAAAAAAwwEoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T12:38:28.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Chattero\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\BS00000000\\Documents\\GitHub\\Esercizi\\TaskChat\\Chattero\\Chattero\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Chattero\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA5wDUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T15:21:12.969Z"
             },
             {
               "$type": "Document",

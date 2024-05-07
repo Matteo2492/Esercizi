@@ -65,7 +65,7 @@ namespace Chattero.Controllers
                     Data = email
                 });
             }
-            return Ok(new Risposta()
+            return BadRequest(new Risposta()
             {
                 Status = "ERRORE"
             });
