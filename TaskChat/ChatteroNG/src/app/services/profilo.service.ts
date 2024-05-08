@@ -8,7 +8,7 @@ import { Risposta } from '../models/risposta';
 })
 export class ProfiloService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   recuperaProfilo(): Observable<Risposta> {
     let contenutoToken = localStorage.getItem('ilToken');
@@ -21,5 +21,5 @@ export class ProfiloService {
       { headers: headerCustom }
     );
   }
-  
+
 }

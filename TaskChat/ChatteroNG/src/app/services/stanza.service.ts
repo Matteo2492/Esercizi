@@ -10,48 +10,24 @@ import { Stanza } from '../models/stanza';
 export class StanzaService {
 
   base_url: string = 'https://localhost:7260/Stanza/';
- 
 
-  constructor(private http: HttpClient) {}
 
-  recuperaStanzePerUtente(nomeUtente : string|undefined) : Observable<Risposta> {
+  constructor(private http: HttpClient) { }
+
+  recuperaStanzePerUtente(nomeUtente: string | undefined): Observable<Risposta> {
     return this.http.get<Risposta>(`${this.base_url}create_da/${nomeUtente}`);
   }
-  recuperaStanzeP(nomeUtente : string|undefined) : Observable<Risposta> {
+  recuperaStanzeP(nomeUtente: string | undefined): Observable<Risposta> {
     return this.http.get<Risposta>(`${this.base_url}stanze_di/${nomeUtente}`);
   }
-  recuperaStanzeNuove(nomeUtente : string|undefined) : Observable<Risposta> {
+  recuperaStanzeNuove(nomeUtente: string | undefined): Observable<Risposta> {
     return this.http.get<Risposta>(`${this.base_url}stanze_nuove/${nomeUtente}`);
   }
-  creaStanza(sta:Stanza): Observable<Risposta> {
+  creaStanza(sta: Stanza): Observable<Risposta> {
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');
 
-    return this.http.post<Risposta>(this.base_url +'creastanza', sta, {
-      headers: headerCustom,
-    });
-  }
-  dettaglioStanza(sta:string): Observable<Risposta> {
-    let headerCustom = new HttpHeaders();
-    headerCustom.set('Content-Type', 'application/json');
-
-    return this.http.get<Risposta>(this.base_url +'dettaglio_stanza/' + sta, {
-      headers: headerCustom,
-    });
-  }
-  aggiungiUtente(stanza:string,utente:string): Observable<Risposta>{
-    let headerCustom = new HttpHeaders();
-    headerCustom.set('Content-Type', 'application/json');
-
-    return this.http.post<Risposta>(this.base_url +'aggiungipartecipante/'+stanza+"/"+utente, {
-      headers: headerCustom,
-    });
-  }
-  rimuoviUtente(stanza:string,utente:string): Observable<Risposta>{
-    let headerCustom = new HttpHeaders();
-    headerCustom.set('Content-Type', 'application/json');
-
-    return this.http.put<Risposta>(this.base_url +'rimuovipartecipante/'+stanza+"/"+utente, {
+    return this.http.post<Risposta>(this.base_url + 'creastanza', sta, {
       headers: headerCustom,
     });
   }
@@ -59,10 +35,35 @@ export class StanzaService {
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');
 
-    return this.http.post<Risposta>(this.base_url +'global', {
+    return this.http.post<Risposta>(this.base_url + 'global', {
       headers: headerCustom,
     });
   }
+  dettaglioStanza(sta: string): Observable<Risposta> {
+    let headerCustom = new HttpHeaders();
+    headerCustom.set('Content-Type', 'application/json');
+
+    return this.http.get<Risposta>(this.base_url + 'dettaglio_stanza/' + sta, {
+      headers: headerCustom,
+    });
+  }
+  aggiungiUtente(stanza: string, utente: string): Observable<Risposta> {
+    let headerCustom = new HttpHeaders();
+    headerCustom.set('Content-Type', 'application/json');
+
+    return this.http.post<Risposta>(this.base_url + 'aggiungipartecipante/' + stanza + "/" + utente, {
+      headers: headerCustom,
+    });
+  }
+  rimuoviUtente(stanza: string, utente: string): Observable<Risposta> {
+    let headerCustom = new HttpHeaders();
+    headerCustom.set('Content-Type', 'application/json');
+
+    return this.http.put<Risposta>(this.base_url + 'rimuovipartecipante/' + stanza + "/" + utente, {
+      headers: headerCustom,
+    });
+  }
+
   eliminaStanza(nome: string): Observable<Risposta> {
     let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
     const url = `${this.base_url}elimina_stanza/${nome}`;

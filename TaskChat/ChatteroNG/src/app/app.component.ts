@@ -13,10 +13,10 @@ export class AppComponent {
 
   constructor(private router: Router) {
     if (localStorage.getItem('ilToken')) {
-        this.isLoggato = true;
-        this.router.navigate(['/profilo']); // Reindirizza alla rotta "profilo"
+      this.isLoggato = true;
+      this.router.navigate(['/profilo']); // Reindirizza alla rotta "profilo"
     }
-  } 
+  }
   logout() {
     localStorage.removeItem('ilToken');
     this.isLoggato = false;

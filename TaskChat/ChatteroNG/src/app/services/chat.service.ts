@@ -14,21 +14,21 @@ export class ChatService {
     private rottaAttiva: ActivatedRoute,
     private http: HttpClient,
     private router: Router
-  ) {}
+  ) { }
 
   stampaMessaggi(nomeChat: string): Observable<Risposta> {
     return this.http.get<Risposta>(
       'https://localhost:7260/Stanza/messaggi/' + nomeChat
     );
   }
-  eliminaMsg(nome:string,ora:Date): Observable<Risposta> {
+  eliminaMsg(nome: string, ora: Date): Observable<Risposta> {
     let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
-    const url = `https://localhost:7260/Messaggio/elimina_messaggio/`+nome+"/"+ora;
+    const url = `https://localhost:7260/Messaggio/elimina_messaggio/` + nome + "/" + ora;
     return this.http.delete<Risposta>(url, {
       headers: headerCustom,
     });
   }
-  invio(contenuto: string,mittente: string,stanza: string): Observable<Risposta> {
+  invio(contenuto: string, mittente: string, stanza: string): Observable<Risposta> {
     if (!contenuto.trim()) {
       return EMPTY; // Restituisci un'Observable vuota
     }
@@ -37,7 +37,7 @@ export class ChatService {
     m.sta = stanza;
     m.con = contenuto;
 
-    
+
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');
 

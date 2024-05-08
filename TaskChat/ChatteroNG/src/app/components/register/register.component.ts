@@ -24,13 +24,24 @@ export class RegisterComponent {
     private service: UtenteService,
     private serviceRistorante: StanzaService,
     private router: Router
-  ) {}
+  ) { }
 
-  login():void{
+  login(): void {
     this.router.navigateByUrl(`/login`);
   }
-  clicca():void{
-    alert("Pew Pew. Sei morto.")
+  clicca(): void {
+    Swal.fire({
+      imageUrl: 'https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif',
+      imageAlt: 'Custom image',
+      confirmButtonText: 'Cool!',
+      confirmButtonColor: '#3085d6',
+      background: '#f3f3f3',
+      customClass: {
+        popup: 'my-custom-popup-class',
+        title: 'my-custom-title-class',
+        confirmButton: 'my-custom-confirm-button-class'
+      },
+    });
   }
   inserimento(): void {
     let utente = new Utente();

@@ -11,13 +11,13 @@ export class UtenteService {
 
   base_url: string = 'https://localhost:7260/Utente/';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  register(obj:Utente): Observable<Risposta> {
+  register(obj: Utente): Observable<Risposta> {
     let headerCustom = new HttpHeaders();
     headerCustom.set('Content-Type', 'application/json');
 
-    return this.http.post<Risposta>(this.base_url +'register', obj, {
+    return this.http.post<Risposta>(this.base_url + 'register', obj, {
       headers: headerCustom,
     });
   }

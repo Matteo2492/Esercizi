@@ -8,7 +8,7 @@ import { Utente } from '../models/utente';
   providedIn: 'root'
 })
 export class AuthService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   login(obj: Utente): Observable<RisToken> {
     let headerCustom = new HttpHeaders();

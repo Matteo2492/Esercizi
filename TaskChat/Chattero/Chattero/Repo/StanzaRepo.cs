@@ -49,7 +49,11 @@ namespace Chattero.Repo
         }
         public bool Insert(Stanza item)
         {
-
+            string? nome = item.NomeStanza;
+            if(GetCode(nome) is not null)
+            {
+                return false;
+            }
             try
             {
                 stanza.InsertOne(item);
@@ -179,10 +183,6 @@ namespace Chattero.Repo
             }
         }
   
-        public Stanza? GetByObjectId(ObjectId id)
-        {
-            return stanza.Find(r => r.StanzaID == id).ToList()[0];
-        }
         public bool CreateGlobal()
         {
             return this.Insert(new Stanza()

@@ -143,7 +143,7 @@ namespace Chattero.Controllers
             });
         }
 
-        [HttpGet("global")]
+        [HttpPost("global")]
         public IActionResult CreaGlobal()
         {
             if (_service.CreaGlobal())

@@ -16,8 +16,8 @@ export class ProfiloComponent {
   listaStanzeNuove: Stanza[] | undefined;
   nomeUte: string | undefined;
   handleInterval: any;
-  nomesta : string | undefined;
-  descsta : string | undefined;
+  nomesta: string | undefined;
+  descsta: string | undefined;
   stanza: Stanza | undefined;
   constructor(
     private router: Router,
@@ -29,7 +29,7 @@ export class ProfiloComponent {
   }
 
   stampa(): void {
-    if(this.nomeUte !== null){
+    if (this.nomeUte !== null) {
       this.stanzaService.recuperaStanzePerUtente(this.nomeUte).subscribe((risultato) => {
         this.listaStanzeCreate = <Stanza[]>risultato.data;
       });
@@ -73,7 +73,7 @@ export class ProfiloComponent {
       });
     }
   }
-  partecipa(roomName: string):void{
+  partecipa(roomName: string): void {
     this.router.navigateByUrl(`/chat/${roomName}`);
   }
   exitChat(roomName: string): void {
@@ -109,17 +109,37 @@ export class ProfiloComponent {
       });
     }
   }
-  
-  creaStanza():void{
+
+  creaStanza(): void {
     this.stanza = new Stanza();
     if (this.stanza && this.nomeUte) {
       this.stanza.nomSta = this.nomesta;
       this.stanza.desc = this.descsta;
       this.stanza.cre = this.nomeUte;
     }
-    this.stanzaService.creaStanza(this.stanza).subscribe((risultato) => {
-      if (risultato.status == 'SUCCESS') console.log(risultato.data);
-      else alert('ERRORE');
+    this.stanzaService.creaStanza(this.stanza).subscribe({
+      next: (risultato) => {
+        if (risultato.status === 'SUCCESS') {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: 'Stanza creata con successo!'
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: risultato.data
+          });
+        }
+      },
+      error: (error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Errore nella creazione della stanza.'
+        });
+      }
     });
   }
   eliminaStanza(nomesta: string): void {
@@ -151,23 +171,25 @@ export class ProfiloComponent {
   }
 
   ngOnInit(): void {
-    if(localStorage.getItem("email")){
-      this.stanzaService.creaGlobal();
-    }
     const email = localStorage.getItem("email");
     this.nomeUte = email !== null ? email : undefined;
+    if(!this.stanzaService.recuperaStanzePerUtente("JESUS")){
+      this.stanzaService.creaGlobal().subscribe(()=>{
+        this.stampa();
+      })
+    }
     this.serviceProfilo.recuperaProfilo().subscribe((risultato) => {
       this.nomeUte = risultato.data;
       this.stampa();
-    });  
+    });
     this.handleInterval = setInterval(() => {
       this.stampa();
-    },1000);
+    }, 1000);
   }
   ngOnDestroy(): void {
 
-    clearInterval(this.handleInterval); 
+    clearInterval(this.handleInterval);
   }
 
-  
+
 }

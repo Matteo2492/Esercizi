@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
 export class ChatComponent {
   @ViewChild('scrollTarget')
   scrollTarget!: ElementRef;
-  nomeUte:string |undefined;
+  nomeUte: string | undefined;
   messaggi: Messaggio[] = new Array();
   nomeChat: string | undefined;
   messaggioInput: string | undefined;
@@ -26,8 +26,8 @@ export class ChatComponent {
     private service: ChatService,
     private serviceStanza: StanzaService,
     private messaggioService: ChatService
-  ) {}
-  
+  ) { }
+
   backToProfilo(): void {
     this.router.navigateByUrl('/profilo');
   }
@@ -56,73 +56,73 @@ export class ChatComponent {
             Swal.fire('Messaggio eliminato', '', 'success');
           });
         }
+        setTimeout(() => {
+          this.scrollToBottom();
+        }, 1000);
       });
     }
-    setTimeout(() => {
-      this.scrollToBottom();
-    }, 600);
   }
   aggiungiMembro(nuovoMembro: string): void {
     if (this.nomeChat) {
-        this.serviceStanza.aggiungiUtente( this.nomeChat,nuovoMembro).subscribe((risultato) => {
-            // In caso di successo, mostra una notifica con SweetAlert2
-            Swal.fire({
-                icon: 'success',
-                title: 'Membro aggiunto con successo!',
-                text: `Il membro ${nuovoMembro} è stato aggiunto alla chat.`,
-                showConfirmButton: false,
-                timer: 2000 // Chiude automaticamente la notifica dopo 2 secondi
-            });
-        }, (error) => {
-            // In caso di errore, mostra una notifica di errore con SweetAlert2
-            Swal.fire({
-                icon: 'error',
-                title: 'Errore!',
-                text: 'Si è verificato un errore durante l\'aggiunta del membro alla chat. Si prega di riprovare più tardi.',
-                confirmButtonText: 'OK'
-            });
-        });
-    } else {
-        // Se manca il nome della chat, mostra una notifica di avviso con SweetAlert2
+      this.serviceStanza.aggiungiUtente(this.nomeChat, nuovoMembro).subscribe((risultato) => {
+        // In caso di successo, mostra una notifica con SweetAlert2
         Swal.fire({
-            icon: 'warning',
-            title: 'Attenzione!',
-            text: 'Si prega di fornire il nome della chat prima di aggiungere un membro.',
-            confirmButtonText: 'OK'
+          icon: 'success',
+          title: 'Membro aggiunto con successo!',
+          text: `Il membro ${nuovoMembro} è stato aggiunto alla chat.`,
+          showConfirmButton: false,
+          timer: 2000 // Chiude automaticamente la notifica dopo 2 secondi
         });
+      }, (error) => {
+        // In caso di errore, mostra una notifica di errore con SweetAlert2
+        Swal.fire({
+          icon: 'error',
+          title: 'Errore!',
+          text: 'Si è verificato un errore durante l\'aggiunta del membro alla chat. Si prega di riprovare più tardi.',
+          confirmButtonText: 'OK'
+        });
+      });
+    } else {
+      // Se manca il nome della chat, mostra una notifica di avviso con SweetAlert2
+      Swal.fire({
+        icon: 'warning',
+        title: 'Attenzione!',
+        text: 'Si prega di fornire il nome della chat prima di aggiungere un membro.',
+        confirmButtonText: 'OK'
+      });
     }
     setTimeout(() => {
       this.scrollToBottom();
       this.dettaglio();
     }, 600);
   }
-  rimuovi(partecipante:string):void{
+  rimuovi(partecipante: string): void {
     if (this.nomeChat) {
-      this.serviceStanza.rimuoviUtente( this.nomeChat,partecipante).subscribe((risultato) => {
-          // In caso di successo, mostra una notifica con SweetAlert2
-          Swal.fire({
-              icon: 'success',
-              title: 'Membro rimosso con successo!',
-              text: `Il membro ${partecipante} è stato rimosso alla chat.`,
-              showConfirmButton: false,
-              timer: 2000 // Chiude automaticamente la notifica dopo 2 secondi
-          });
+      this.serviceStanza.rimuoviUtente(this.nomeChat, partecipante).subscribe((risultato) => {
+        // In caso di successo, mostra una notifica con SweetAlert2
+        Swal.fire({
+          icon: 'success',
+          title: 'Membro rimosso con successo!',
+          text: `Il membro ${partecipante} è stato rimosso alla chat.`,
+          showConfirmButton: false,
+          timer: 2000 // Chiude automaticamente la notifica dopo 2 secondi
+        });
       }, (error) => {
-          // In caso di errore, mostra una notifica di errore con SweetAlert2
-          Swal.fire({
-              icon: 'error',
-              title: 'Errore!',
-              text: 'Si è verificato un errore durante l\'eliminazione del membro alla chat. Si prega di riprovare più tardi.',
-              confirmButtonText: 'OK'
-          });
+        // In caso di errore, mostra una notifica di errore con SweetAlert2
+        Swal.fire({
+          icon: 'error',
+          title: 'Errore!',
+          text: 'Si è verificato un errore durante l\'eliminazione del membro alla chat. Si prega di riprovare più tardi.',
+          confirmButtonText: 'OK'
+        });
       });
-  } else {
+    } else {
       // Se manca il nome della chat, mostra una notifica di avviso con SweetAlert2
       Swal.fire({
-          icon: 'warning',
-          title: 'Attenzione!',
-          text: 'Si prega di fornire il nome della chat prima di aggiungere un membro.',
-          confirmButtonText: 'OK'
+        icon: 'warning',
+        title: 'Attenzione!',
+        text: 'Si prega di fornire il nome della chat prima di aggiungere un membro.',
+        confirmButtonText: 'OK'
       });
     }
     setTimeout(() => {
@@ -139,12 +139,12 @@ export class ChatComponent {
     this.dettaglio();
     this.handleInterval = setInterval(() => {
       this.stampaMessaggi(<string>this.nomeChat);
-      
+
       console.log(this.stanza);
-    },500);
+    }, 500);
     setTimeout(() => {
       this.scrollToBottom();
-    },600);
+    }, 600);
   }
 
   scrollToTop(): void {
@@ -153,22 +153,22 @@ export class ChatComponent {
   scrollToBottom() {
     this.scrollTarget.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   }
-  dettaglio():void{
-    if(this.nomeChat)
-    this.serviceStanza.dettaglioStanza(this.nomeChat).subscribe((risultato)=>{
-      this.stanza = risultato.data;
-    })
+  dettaglio(): void {
+    if (this.nomeChat)
+      this.serviceStanza.dettaglioStanza(this.nomeChat).subscribe((risultato) => {
+        this.stanza = risultato.data;
+      })
   }
   inviaMessaggioComponent(): void {
     this.messaggioService.invio(<string>this.messaggioInput, <string>this.nomeUte, <string>this.nomeChat)
       .subscribe((risultato) => {
         this.messaggioInput = "";
       });
-      setTimeout(() => {
-        this.scrollToBottom();
-      },600);
+    setTimeout(() => {
+      this.scrollToBottom();
+    }, 800);
   }
   ngOnDestroy(): void {
-    clearInterval(this.handleInterval); 
+    clearInterval(this.handleInterval);
   }
 }

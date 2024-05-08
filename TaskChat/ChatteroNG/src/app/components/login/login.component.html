@@ -1,34 +1,38 @@
 <section class="gradient-form">
   <div class="container">
     <div class="row mt-5">
-      <h1>Benvenuto in Chattero!</h1>  
+      <h1>Benvenuto in Chattero!</h1>
       <h5>La tua dose giornaliera di vita sociale...</h5>
-    </div>  
-    <div class="row mt-4 d-flex justify-content-center align-items-center" >
+    </div>
+    <div class="row mt-4 d-flex justify-content-center align-items-center">
       <div class="col-xl-10">
-        <div class="card rounded-3 text-black" >
+        <div class="card rounded-3 text-black">
           <div class="row sfumata">
             <div class="col-lg-6" style="min-height: 700px;">
               <div class="card-body p-md-5">
                 <div class="text-center">
-                  <img class="mb-1 pb-2" src="./assets/Login.png"
-                    style="width: 300px; height: 200px;" alt="logo">
+                  <img class="mb-1 pb-2" src="./assets/Login.png" style="width: 300px; height: 200px;" alt="logo">
                 </div>
                 <form class="form-group">
-                  <div data-mdb-input-init  class="mb-4">
-                    <input placeholder="Username" type="text" id="input-user" class="form-control" [(ngModel)]="user" name="user"/>             
+                  <div data-mdb-input-init class="mb-4">
+                    <input placeholder="Username" type="text" id="input-user" class="form-control" [(ngModel)]="user"
+                      name="user" />
                   </div>
                   <div data-mdb-input-init class="mb-4">
-                    <input placeholder="Password" type="password" id="input-pass" class="form-control" [(ngModel)]="pass" name="pass"/>     
+                    <input placeholder="Password" type="password" id="input-pass" class="form-control"
+                      [(ngModel)]="pass" name="pass" />
                   </div>
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" (click)="verifica()">Login</button>
-                    <a class="text-muted" href="#" (click)="clicca()">Clicca qui</a>
+                    <button data-mdb-button-init data-mdb-ripple-init
+                      class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit"
+                      (click)="verifica()">Login</button>
+                    <a class="text-muted" (click)="clicca()">Clicca qui</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2" >Don't have an account?</p>
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success"(click)="register()">Create new</button>
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success"
+                      (click)="register()">Create new</button>
                   </div>
                 </form>
               </div>
@@ -36,7 +40,8 @@
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                 <h2 class="mb-4">Non solo una chat</h2>
-                <p>Crea nuove stanze  per chattare con altre persone, così da espandere la tua vita sociale, puoi anche imbucarti direttamente in quelle create da altre persone. Niente parolacce..</p>
+                <p>Crea nuove stanze per chattare con altre persone, così da espandere la tua vita sociale, puoi anche
+                  imbucarti direttamente in quelle create da altre persone. Niente parolacce..</p>
               </div>
             </div>
           </div>
@@ -45,4 +50,3 @@
     </div>
   </div>
 </section>
-

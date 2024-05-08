@@ -56,10 +56,6 @@ namespace Chattero.Repo
             }
             return false;
         }
-        public Messaggio PrendiDaDatabase(MessaggioDTO msg)
-        {
-            return messaggio.Find(p=> true && p.NomeUtente == msg.NomUte && p.Orario == msg.Ora).Single();
-        }
         public Messaggio? GetId(int id)
         {
             throw new NotImplementedException();

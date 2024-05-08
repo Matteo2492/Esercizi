@@ -85,24 +85,6 @@ namespace Chattero.Services
             }
             return new StanzaDTO();      
         }
-        public StanzaDTO? RestuisciStanza(StanzaDTO nome)
-        {
-            
-            Stanza? imp = _repo.GetCode(nome.NomSta);
-            if (imp is not null)
-            {
-                return new StanzaDTO()
-                {
-                    NomSta = imp.NomeStanza,
-                    Desc = imp.Descrizione,
-                    Datcre = imp.DataCreazione,
-                    LisMsg = imp.ListaMessaggi,
-                    LisUte = imp.ListaUtente,
-                    Cre = imp.Creatore
-                };
-            }
-            return null;
-        }
         public bool ModificaStanza(StanzaDTO objdto)
         {
             return _repo.Update(new Stanza()
