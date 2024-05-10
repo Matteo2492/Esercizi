@@ -1,6 +1,0 @@
-@TASKINO_HostAddress = http://localhost:5252
-
-GET {{TASKINO_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

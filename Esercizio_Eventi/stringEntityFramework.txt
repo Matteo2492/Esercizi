@@ -1,1 +1,0 @@
-Scaffold-DbContext "Server=ACADEMY2024-08\SQLEXPRESS;Database=acc_lez28_eventi;User Id=academy;Password=academy!;MultipleActiveResultSets=true;Encrypt=false;TrustServerCertificate=false" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
