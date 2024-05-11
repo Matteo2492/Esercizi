@@ -3,4 +3,5 @@ export class Messaggio {
     con: string | undefined;
     sta: string | undefined;
     ora: Date = new Date();
+    immagine?: string | ArrayBuffer | undefined;
 }

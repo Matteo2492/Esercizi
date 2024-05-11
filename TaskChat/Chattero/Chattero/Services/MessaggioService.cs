@@ -26,7 +26,8 @@ namespace Chattero.Services
                 {
                     NomUte = imp.NomeUtente,
                     Con = imp.Contenuto,
-                    Ora = imp.Orario
+                    Ora = imp.Orario,
+                    ImmagineData = imp.ImmagineData
                 });
             }
             return lista;

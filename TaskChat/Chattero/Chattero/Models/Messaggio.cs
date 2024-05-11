@@ -15,5 +15,7 @@ namespace Chattero.Models
         public ObjectId? Stanza { get; set; }
         [BsonElement("ora")]
         public DateTime Orario { get; set; }
+        [BsonElement("immagineData")] 
+        public byte[]? ImmagineData { get; set; }
     }
 }

@@ -28,19 +28,19 @@ export class ChatService {
       headers: headerCustom,
     });
   }
-  invio(contenuto: string, mittente: string, stanza: string): Observable<Risposta> {
-    if (!contenuto.trim()) {
-      return EMPTY; // Restituisci un'Observable vuota
+  invio(contenuto: string, mittente: string, stanza: string, immagine?: string | ArrayBuffer): Observable<Risposta> {
+    if (!contenuto.trim() && !immagine) {
+      return EMPTY;
     }
+  
     let m: Messaggio = new Messaggio();
     m.nomUte = mittente;
     m.sta = stanza;
     m.con = contenuto;
-
-
-    let headerCustom = new HttpHeaders();
-    headerCustom.set('Content-Type', 'application/json');
-
+    m.immagine = immagine; // Assicurati che immagine contenga i dati binari dell'immagine
+  
+    let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
+  
     return this.http.post<Risposta>('https://localhost:7260/Stanza/aggiungi_messaggio/', m, {
       headers: headerCustom,
     });

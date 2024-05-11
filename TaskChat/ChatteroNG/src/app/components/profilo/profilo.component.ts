@@ -19,6 +19,7 @@ export class ProfiloComponent {
   nomesta: string | undefined;
   descsta: string | undefined;
   stanza: Stanza | undefined;
+
   constructor(
     private router: Router,
     private serviceProfilo: ProfiloService,
@@ -169,12 +170,38 @@ export class ProfiloComponent {
       }
     });
   }
-
+  updateStanza(nomestanza: string): void {
+    Swal.fire({
+      title: 'Inserisci una nuova descrizione',
+      input: 'text',
+      inputPlaceholder: 'Nuova descrizione',
+      showCancelButton: true,
+      confirmButtonText: 'Conferma',
+      cancelButtonText: 'Annulla',
+      didRender: () => {
+        const inputElement = document.querySelector('.swal2-input') as HTMLInputElement;
+        inputElement.focus();
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const nuovaDescrizione = result.value;
+        this.stanzaService.modificaStanza(nomestanza, nuovaDescrizione).subscribe((risultato) => {
+          if (risultato.status === 'SUCCESS') {
+            Swal.fire('Stanza modificata!', '', 'success');
+          } else {
+            Swal.fire('Impossibile modificare la stanza.', '', 'error');
+          }
+        });
+      } else {
+        Swal.fire('Modifica annullata', '', 'info');
+      }
+    });
+  }
   ngOnInit(): void {
     const email = localStorage.getItem("email");
     this.nomeUte = email !== null ? email : undefined;
-    if(!this.stanzaService.recuperaStanzePerUtente("JESUS")){
-      this.stanzaService.creaGlobal().subscribe(()=>{
+    if (!this.stanzaService.recuperaStanzePerUtente("JESUS")) {
+      this.stanzaService.creaGlobal().subscribe(() => {
         this.stampa();
       })
     }

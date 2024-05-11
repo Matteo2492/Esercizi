@@ -36,7 +36,7 @@
 
 
   <!-- Modal Gestione-->
-  <div class="modal fade" id="modaleGestione" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modaleGestione" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content prova text-light">
         <div class="modal-header">
@@ -89,7 +89,12 @@
                 <p class="card-text">Data creazione: {{ item.datcre | date: 'dd/MM/yy' }}</p>
               </div>
               <div class="card-footer text-body-secondary">
-                <button class="btn btn-danger" (click)="item.nomSta && eliminaStanza(item.nomSta)">Delete</button>
+                <button class="btn btn-outline-success btn-sm mr-2" (click)="item.nomSta && updateStanza(item.nomSta)">
+                  Update
+                </button>
+                <button class="btn btn-danger btn-sm" (click)="item.nomSta && eliminaStanza(item.nomSta)">
+                  Delete
+                </button>
               </div>
             </div>
           </div>

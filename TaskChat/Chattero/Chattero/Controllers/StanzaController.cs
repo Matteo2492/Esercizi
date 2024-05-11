@@ -132,7 +132,26 @@ namespace Chattero.Controllers
             }
             return BadRequest();
         }
-
+        [HttpPost("modifica_stanza/")]
+        public IActionResult ModificaStanza(StanzaDTO sta)
+        {
+            if(_service.Modifica(sta))
+            {
+                return Ok(new Risposta()
+                {
+                    Status = "SUCCESS",
+                    Data = "Modifica avvenuta"
+                });
+            }
+            else
+            {
+                return Ok(new Risposta()
+                {
+                    Status = "ERROR",
+                    Data = "Errore di modifica"
+                });
+            }
+        }
         [HttpGet("lista_stanze")]
         public IActionResult GetAll()
         {

@@ -85,7 +85,7 @@ namespace Chattero.Services
             }
             return new StanzaDTO();      
         }
-        public bool ModificaStanza(StanzaDTO objdto)
+        public bool Modifica(StanzaDTO objdto)
         {
             return _repo.Update(new Stanza()
             {

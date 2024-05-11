@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { Risposta } from '../models/risposta';
 import { Stanza } from '../models/stanza';
 
@@ -10,7 +10,7 @@ import { Stanza } from '../models/stanza';
 export class StanzaService {
 
   base_url: string = 'https://localhost:7260/Stanza/';
-
+  stanza: Stanza = new Stanza();
 
   constructor(private http: HttpClient) { }
 
@@ -63,12 +63,22 @@ export class StanzaService {
       headers: headerCustom,
     });
   }
-
   eliminaStanza(nome: string): Observable<Risposta> {
     let headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
     const url = `${this.base_url}elimina_stanza/${nome}`;
     return this.http.delete<Risposta>(url, {
       headers: headerCustom,
     });
+  }
+  modificaStanza(nome: string, descrizione: string): Observable<Risposta> {
+    if (this.stanza) {
+      this.stanza.desc = descrizione;
+      this.stanza.nomSta = nome;
+      this.stanza.cre = "s";
+    }
+    const headerCustom = new HttpHeaders().set('Content-Type', 'application/json');
+    const url = `${this.base_url}modifica_stanza/`;
+
+    return this.http.post<Risposta>(url, this.stanza, { headers: headerCustom });
   }
 }
