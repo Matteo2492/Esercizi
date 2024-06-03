@@ -63,15 +63,16 @@
   <div #scrollTarget></div>
 </div>
 
-<div class="container p-3" style="position: sticky; bottom: 0;">
+<form (ngSubmit)="inviaMessaggioComponent()" class="container p-3 sticky-bottom">
   <div class="row">
     <div class="col-11">
-      <input class="form-control" placeholder="Inserisci un messaggio" id="messaggio" [(ngModel)]="messaggioInput" />
+      <input class="form-control" placeholder="Inserisci un messaggio" id="messaggio" [(ngModel)]="messaggioInput"
+        name="messaggio" aria-label="Input messaggio" required />
     </div>
     <div class="col-1">
-      <button class="btn btn-success" (click)="inviaMessaggioComponent()">
+      <button type="submit" class="btn btn-success" aria-label="Invia messaggio">
         <i class="fa fa-paper-plane" aria-hidden="true"></i>
       </button>
     </div>
   </div>
-</div>
+</form>
